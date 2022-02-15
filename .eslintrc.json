@@ -9,9 +9,8 @@
         "plugin:react/recommended",
         "airbnb",
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
-        "prettier/react",
-        "prettier/airbnb"
+        "prettier"
+
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -25,10 +24,19 @@
         "react",
         "@typescript-eslint",
         "prettier"
+
     ],
     "rules": {
         "prettier/prettier": "error",
         "space-before-function-paren":"off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "react/function-component-definition": [
+          2,
+          {
+            "namedComponents": "function-declaration",
+          },
+        ],
     }
 }
