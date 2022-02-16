@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -6,6 +7,7 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document'
+import React from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -35,13 +37,14 @@ export default class MyDocument extends Document {
       sheet.seal()
     }
   }
+
   render(): JSX.Element {
     return (
       <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
         </Head>
-        <body>
+        <body className="bg-gray-900">
           <Main />
           <NextScript />
         </body>
