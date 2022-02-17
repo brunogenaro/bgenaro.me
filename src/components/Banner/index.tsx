@@ -3,7 +3,7 @@ import TypeAnimation from 'react-type-animation'
 import ImageContainer, { ImageBorder, InsertionPointer } from './style'
 
 const Banner: React.FC = () => (
-  <section className="flex items-center justify-center py-10 px-52">
+  <section className="flex items-center justify-center py-10">
     <div className=" mr-50">
       <span className="ml-1 text-3xl tracking-wide text-gray-300">
         Hello, Im
@@ -12,7 +12,7 @@ const Banner: React.FC = () => (
         Bruno Genaro
       </h1>
       <div className="flex items-center">
-        <h2 className=" bg-gradient-to-br from-cyan-500 to-blue-500 bg-clip-text text-8xl font-bold tracking-wide text-transparent text-transparent">
+        <h2 className=" bg-gradient-to-br from-cyan-500 to-blue-500 bg-clip-text text-8xl font-bold tracking-wide text-transparent">
           <TypeAnimation
             cursor
             sequence={['speaker', 3000, 'developer', 3000, 'father', 3000]}
