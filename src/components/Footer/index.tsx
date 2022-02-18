@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import IconLink from '../IconLink'
 import ListItemLink from '../LisItemLink'
-import StyledFooter from './style'
+import StyledFooter from './styles'
 
 const Footer: React.FC = () => (
   <StyledFooter className="flex items-center justify-between bg-gray-300 px-20">

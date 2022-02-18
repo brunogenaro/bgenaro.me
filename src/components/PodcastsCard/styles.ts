@@ -8,5 +8,3 @@ export const Thumbnail = styled.div`
 export const TextContainer = styled.div`
   max-width: 600px;
 `
-
-export const PodcastsCardContainer = styled.li``

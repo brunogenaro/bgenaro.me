@@ -25,6 +25,12 @@ const ProjectsBanner: React.FC = () => (
         path="/"
         date="14 novembro 2020"
       />
+      <ProjectsCard
+        title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
+        description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
+        path="/"
+        date="14 novembro 2020"
+      />
     </ul>
     <SeeAll title="projects" path="/projects" />
   </section>

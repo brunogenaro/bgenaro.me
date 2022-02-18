@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { TalksCardContainer, Thumbnail } from './styles'
+import { Thumbnail } from './styles'
 
 interface iTalksCard {
   title: string
@@ -15,7 +15,7 @@ export const TalksCard: React.FC<iTalksCard> = ({
   path,
   date,
 }: iTalksCard) => (
-  <TalksCardContainer className="mx-5 rounded-3xl bg-gray-800">
+  <li className="mx-5 rounded-3xl bg-gray-800">
     <Link href={path}>
       <a href={path}>
         <div>
@@ -49,7 +49,7 @@ export const TalksCard: React.FC<iTalksCard> = ({
         </div>
       </a>
     </Link>
-  </TalksCardContainer>
+  </li>
 )
 
 export default TalksCard

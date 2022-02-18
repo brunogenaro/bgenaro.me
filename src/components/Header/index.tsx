@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import ListItemLink from '../LisItemLink'
-import { StyledHeader } from './style'
+import { StyledHeader } from './styles'
 
 const Header: React.FC = () => (
   <StyledHeader className="flex items-center justify-between px-20">

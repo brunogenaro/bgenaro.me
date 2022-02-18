@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { PodcastsCardContainer, TextContainer, Thumbnail } from './style'
+import { TextContainer, Thumbnail } from './styles'
 
 interface iPodcastsCard {
   title: string
@@ -19,7 +19,7 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
   mirrored,
   className,
 }: iPodcastsCard) => (
-  <PodcastsCardContainer className={`my-5 flex items-center ${className}`}>
+  <li className={`my-5 flex items-center ${className}`}>
     {!mirrored ? (
       <>
         <Thumbnail className="overflow-hidden rounded-3xl">
@@ -89,7 +89,7 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
         </Thumbnail>
       </>
     )}
-  </PodcastsCardContainer>
+  </li>
 )
 
 PodcastsCard.defaultProps = {

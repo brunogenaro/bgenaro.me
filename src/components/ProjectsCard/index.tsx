@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ProjectsCardContainer, Thumbnail } from './styles'
+import { Thumbnail } from './styles'
 
 interface iProjectsCard {
   title: string
@@ -15,7 +15,7 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
   path,
   date,
 }: iProjectsCard) => (
-  <ProjectsCardContainer className="relative mx-5 rounded-3xl bg-gray-800">
+  <li className="relative mx-5 rounded-3xl bg-gray-800">
     <Link href={path}>
       <a href={path}>
         <div>
@@ -49,7 +49,7 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
         </div>
       </a>
     </Link>
-  </ProjectsCardContainer>
+  </li>
 )
 
 export default ProjectsCard
