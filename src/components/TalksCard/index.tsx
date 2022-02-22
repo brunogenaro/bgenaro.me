@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Thumbnail } from './styles'
 
 interface iTalksCard {
   title: string
   description: string
   path: string
   date: string
+  customStyles?: string
 }
 
 export const TalksCard: React.FC<iTalksCard> = ({
@@ -14,12 +14,13 @@ export const TalksCard: React.FC<iTalksCard> = ({
   description,
   path,
   date,
+  customStyles,
 }: iTalksCard) => (
-  <li className="mx-5 rounded-3xl bg-gray-800">
+  <li className={`mx-5 rounded-3xl bg-gray-800 ${customStyles}`}>
     <Link href={path}>
       <a href={path}>
         <div>
-          <Thumbnail className="overflow-hidden rounded-3xl">
+          <div className="h-72 w-full overflow-hidden rounded-3xl">
             <Image
               src="/assets/image/blue.jpg"
               alt="talk image"
@@ -28,7 +29,7 @@ export const TalksCard: React.FC<iTalksCard> = ({
               height="100%"
               layout="responsive"
             />
-          </Thumbnail>
+          </div>
           <div className="relative -mt-10 -ml-5 flex h-fit w-fit items-center justify-center rounded-xl bg-cyan-500 p-4">
             <Image
               src="/assets/image/talks.svg"
@@ -51,5 +52,9 @@ export const TalksCard: React.FC<iTalksCard> = ({
     </Link>
   </li>
 )
+
+TalksCard.defaultProps = {
+  customStyles: '',
+}
 
 export default TalksCard
