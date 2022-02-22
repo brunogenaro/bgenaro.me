@@ -1,16 +1,21 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import ListItemLink from '../LisItemLink'
-import { StyledHeader } from './styles'
 
 const Header: React.FC = () => (
-  <StyledHeader className="flex items-center justify-between px-20">
-    <Image
-      src="/assets/image/brand.svg"
-      alt="Bruno Genaro Brand"
-      width={100}
-      height={50}
-    />
+  <div className="flex h-32 items-center justify-between px-20">
+    <Link href="/">
+      <a href="/">
+        <Image
+          src="/assets/image/brand.svg"
+          alt="Bruno Genaro Brand"
+          width={100}
+          height={50}
+        />
+      </a>
+    </Link>
     <nav className="self-center">
       <ul className="my-2 flex">
         <ListItemLink
@@ -41,7 +46,7 @@ const Header: React.FC = () => (
       </ul>
     </nav>
     <Image src="/assets/image/moon.svg" alt="Moon" width={24} height={24} />
-  </StyledHeader>
+  </div>
 )
 
 export default Header

@@ -2,10 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 import IconLink from '../IconLink'
 import ListItemLink from '../LisItemLink'
-import StyledFooter from './styles'
 
 const Footer: React.FC = () => (
-  <StyledFooter className="flex items-center justify-between bg-gray-300 px-20">
+  <div className=" flex h-32 items-center justify-between bg-gray-300 px-20">
     <Image
       src="/assets/image/brandSymbol.svg"
       alt="Bruno Genaro Brand"
@@ -64,7 +63,7 @@ const Footer: React.FC = () => (
         redirectTo="https://www.linkedin.com/brunogenaro"
       />
     </div>
-  </StyledFooter>
+  </div>
 )
 
 export default Footer
