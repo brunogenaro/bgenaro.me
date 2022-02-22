@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Thumbnail } from './styles'
 
 interface iProjectsCard {
   title: string
   description: string
   path: string
   date: string
+  customStyles?: string
 }
 
 export const ProjectsCard: React.FC<iProjectsCard> = ({
@@ -14,8 +14,9 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
   description,
   path,
   date,
+  customStyles,
 }: iProjectsCard) => (
-  <li className="relative mx-5 rounded-3xl bg-gray-800">
+  <li className={`mx-5 rounded-3xl bg-gray-800 ${customStyles}`}>
     <Link href={path}>
       <a href={path}>
         <div>
@@ -27,7 +28,7 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
               height={32}
             />
           </div>
-          <Thumbnail className="overflow-hidden rounded-3xl">
+          <div className="h-72 w-full  overflow-hidden rounded-3xl">
             <Image
               src="/assets/image/orange.jpg"
               alt="talk image"
@@ -36,7 +37,7 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
               height="100%"
               layout="responsive"
             />
-          </Thumbnail>
+          </div>
         </div>
         <div className="px-5 pb-8 pt-3">
           <h4 className="mb-3 text-2xl font-bold tracking-wide text-gray-300">
@@ -51,5 +52,9 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
     </Link>
   </li>
 )
+
+ProjectsCard.defaultProps = {
+  customStyles: '',
+}
 
 export default ProjectsCard
