@@ -62,11 +62,12 @@ export const InsertionPointer = styled.span`
   @media (min-width: 640px) {
     width: 5px;
     height: 30px;
+    margin-left: -8px;
   }
   @media (min-width: 768px) {
     width: 6px;
     height: 40px;
-    margin-left: -5px;
+    margin-left: -10px;
   }
 
   @media (min-width: 1024px) {
