@@ -14,13 +14,15 @@ const PodcastsBanner: React.FC = () => (
           path="/"
           date="14 novembro 2020"
         />
-        <PodcastsCard
-          title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
-          description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
-          path="/"
-          date="14 novembro 2020"
-          customStyles="mr-0"
-        />
+        <div className="hidden 2xl:block">
+          <PodcastsCard
+            title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
+            description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
+            path="/"
+            date="14 novembro 2020"
+            customStyles="mr-0"
+          />
+        </div>
       </div>
       <div className="flex">
         <PodcastsCard
@@ -29,13 +31,15 @@ const PodcastsBanner: React.FC = () => (
           path="/"
           date="14 novembro 2020"
         />
-        <PodcastsCard
-          title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
-          description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
-          path="/"
-          date="14 novembro 2020"
-          customStyles="mr-0"
-        />
+        <div className="hidden 2xl:block">
+          <PodcastsCard
+            title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
+            description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
+            path="/"
+            date="14 novembro 2020"
+            customStyles="mr-0"
+          />
+        </div>
       </div>
     </ul>
     <SeeAll title="podcasts" path="/podcasts" />
