@@ -13,7 +13,7 @@ const Footer: React.FC = () => (
     />
 
     <nav className="self-center">
-      <ul className="my-2 flex">
+      <ul className="my-2 hidden md:flex">
         <ListItemLink
           label="about"
           redirectTo="/about"
@@ -41,7 +41,7 @@ const Footer: React.FC = () => (
         />
       </ul>
     </nav>
-    <div className="flex">
+    <div className="hidden lg:flex">
       <IconLink
         source="twitter.svg"
         label="twitter"

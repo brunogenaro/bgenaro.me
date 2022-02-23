@@ -15,7 +15,7 @@ const ListItemLink: React.FC<iListItemLink> = ({
   <li className="mx-5">
     <Link href={redirectTo}>
       <a
-        className={` text-lg font-bold tracking-widest ${customStyle}`}
+        className={` text-base font-bold tracking-widest lg:text-lg ${customStyle}`}
         href={redirectTo}
       >
         {label}

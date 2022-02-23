@@ -34,7 +34,7 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
               layout="responsive"
             />
           </div>
-          <div className="relative -ml-44 h-fit w-3/5 rounded-3xl bg-gray-800 p-10">
+          <div className="relative -ml-44 h-fit w-2/5 rounded-3xl bg-gray-800 p-10">
             <h4 className="mb-3 text-2xl font-bold tracking-wide text-gray-300">
               {title}
             </h4>
@@ -64,7 +64,7 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
               height={32}
             />
           </div>
-          <div className="relative z-10  -ml-8 h-fit  w-3/5 rounded-3xl bg-gray-800 p-10">
+          <div className="relative z-10  -ml-8 h-fit  w-2/5 rounded-3xl bg-gray-800 p-10">
             <h4 className="mb-3 text-2xl font-bold tracking-wide text-gray-300">
               {title}
             </h4>

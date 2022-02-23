@@ -9,31 +9,33 @@ const ContactMe: React.FC = () => (
         odio Aliquam inter.
       </p>
     </div>
-    <div className="mb-4 flex">
-      <input
-        className="mr-4 w-1/2 rounded-xl bg-gray-800 p-5 text-blue-500"
-        placeholder="name"
-        type="text"
-      />
-      <input
-        className="w-1/2 rounded-xl bg-gray-800 p-5 text-blue-500"
-        placeholder="email"
-        type="text"
-      />
-    </div>
-    <div className="mb-4">
-      <input
-        className="w-full rounded-xl bg-gray-800 p-5 text-blue-500"
-        placeholder="subjective"
-        type="text"
-      />
-    </div>
-    <div>
-      <input
-        className="h-56 w-full rounded-xl bg-gray-800 p-5 text-blue-500"
-        placeholder="message"
-        type="text"
-      />
+    <div className="text-xl">
+      <div className="mb-4 flex">
+        <input
+          className="mr-4 w-1/2 rounded-xl bg-gray-800 p-4 text-blue-500 placeholder:text-blue-500"
+          placeholder="name"
+          type="text"
+        />
+        <input
+          className="w-1/2 rounded-xl bg-gray-800 p-4 text-blue-500 placeholder:text-blue-500"
+          placeholder="email"
+          type="text"
+        />
+      </div>
+      <div className="mb-4">
+        <input
+          className="w-full rounded-xl bg-gray-800 p-4 text-blue-500 placeholder:text-blue-500"
+          placeholder="subjective"
+          type="text"
+        />
+      </div>
+      <div>
+        <input
+          className="h-56 w-full rounded-xl bg-gray-800 p-4 text-blue-500 placeholder:text-blue-500"
+          placeholder="message"
+          type="text"
+        />
+      </div>
     </div>
     <button
       className="mt-4 rounded-3xl border-2 border-blue-500 p-3 text-xl font-bold  text-blue-500"

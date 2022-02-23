@@ -16,7 +16,7 @@ const Header: React.FC = () => (
         />
       </a>
     </Link>
-    <nav className="self-center">
+    <nav className="hidden self-center md:flex">
       <ul className="my-2 flex">
         <ListItemLink
           label="about"
@@ -45,7 +45,9 @@ const Header: React.FC = () => (
         />
       </ul>
     </nav>
-    <Image src="/assets/image/moon.svg" alt="Moon" width={24} height={24} />
+    <div className="hidden md:flex">
+      <Image src="/assets/image/moon.svg" alt="Moon" width={24} height={24} />
+    </div>
   </div>
 )
 

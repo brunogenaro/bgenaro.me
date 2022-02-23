@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
 const ImageContainer = styled.div`
+  @media (max-width: 640px) {
+    width: 140px;
+    height: 140px;
+  }
+
   @media (min-width: 640px) {
     width: 140px;
     height: 140px;
@@ -30,6 +35,11 @@ const ImageContainer = styled.div`
 `
 
 export const ImageBorder = styled.div`
+  @media (max-width: 640px) {
+    width: 160px;
+    height: 160px;
+  }
+
   @media (min-width: 640px) {
     width: 160px;
     height: 160px;
@@ -59,6 +69,12 @@ export const ImageBorder = styled.div`
 `
 
 export const InsertionPointer = styled.span`
+  @media (max-width: 640px) {
+    width: 5px;
+    height: 30px;
+    margin-left: -8px;
+  }
+
   @media (min-width: 640px) {
     width: 5px;
     height: 30px;
