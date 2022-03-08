@@ -7,9 +7,4 @@ export default createGlobalStyle`
     box-sizing: border-box;
 
   }
-
-  body {
-    background: #312E38;
-    color: #FFF;
-  }
 `
