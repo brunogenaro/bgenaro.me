@@ -1,7 +1,7 @@
 import SeeAll from '../SeeAll'
 import { TalksCard } from '../TalksCard'
 
-const TalksBanner: React.FC = () => (
+const TalksSection: React.FC = () => (
   <section className="my-10">
     <h3 className="ml-5 mb-10 bg-gradient-to-br from-cyan-500 to-blue-500 bg-clip-text text-2xl font-bold tracking-wide text-transparent sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  2xl:text-7xl">
       talks
@@ -39,4 +39,4 @@ const TalksBanner: React.FC = () => (
   </section>
 )
 
-export default TalksBanner
+export default TalksSection

@@ -1,7 +1,7 @@
 import { ProjectsCard } from '../ProjectsCard'
 import SeeAll from '../SeeAll'
 
-const ProjectsBanner: React.FC = () => (
+const ProjectsSection: React.FC = () => (
   <section className="my-10">
     <h3 className="ml-5 mb-10 bg-gradient-to-br from-yellow-500 to-orange-500 bg-clip-text text-2xl font-bold tracking-wide text-transparent sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  2xl:text-7xl">
       projects
@@ -40,4 +40,4 @@ const ProjectsBanner: React.FC = () => (
   </section>
 )
 
-export default ProjectsBanner
+export default ProjectsSection

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import TypeAnimation from 'react-type-animation'
 import ImageContainer, { ImageBorder, InsertionPointer } from './styles'
 
-const Banner: React.FC = () => {
+const HomeBanner: React.FC = () => {
   const [color, setColor] = useState('from-cyan-500 to-blue-500')
   const colors = [
     'from-cyan-500 to-blue-500',
@@ -73,4 +73,4 @@ const Banner: React.FC = () => {
   )
 }
 
-export default Banner
+export default HomeBanner

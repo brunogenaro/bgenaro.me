@@ -1,7 +1,7 @@
 import PodcastsCard from '../PodcastsCard'
 import SeeAll from '../SeeAll'
 
-const PodcastsBanner: React.FC = () => (
+const PodcastsSection: React.FC = () => (
   <section className="my-10">
     <h3 className="ml-5 mb-10 bg-gradient-to-br from-pink-500 to-purple-500 bg-clip-text text-2xl font-bold tracking-wide  text-transparent sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
       podcasts
@@ -46,4 +46,4 @@ const PodcastsBanner: React.FC = () => (
   </section>
 )
 
-export default PodcastsBanner
+export default PodcastsSection
