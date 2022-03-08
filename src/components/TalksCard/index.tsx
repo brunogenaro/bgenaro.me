@@ -16,7 +16,7 @@ export const TalksCard: React.FC<iTalksCard> = ({
   date,
   customStyles,
 }: iTalksCard) => (
-  <li className={`mx-5 rounded-3xl bg-gray-800 ${customStyles}`}>
+  <li className={`rounded-3xl bg-gray-800 ${customStyles}`}>
     <Link href={path}>
       <a href={path}>
         <div>
@@ -30,7 +30,7 @@ export const TalksCard: React.FC<iTalksCard> = ({
               layout="responsive"
             />
           </div>
-          <div className="relative -mt-10 -ml-5 flex h-fit w-fit items-center justify-center rounded-xl bg-cyan-500 p-4">
+          <div className="relative -mt-10 -ml-5 flex h-fit w-fit items-center justify-center rounded-xl bg-blue-500 p-4">
             <Image
               src="/assets/image/talks.svg"
               alt="talk image"
