@@ -1,21 +1,12 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
+import Brand from '../Brand'
 import ListItemLink from '../ListItemLink'
 
 const Header: React.FC = () => (
   <div className="flex h-32 items-center justify-between px-20">
-    <Link href="/">
-      <a href="/">
-        <Image
-          src="/assets/image/brand.svg"
-          alt="Bruno Genaro Brand"
-          width={100}
-          height={50}
-        />
-      </a>
-    </Link>
+    <Brand />
     <nav className="hidden self-center md:flex">
       <ul className="my-2 flex">
         <ListItemLink

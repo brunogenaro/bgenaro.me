@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import TypeAnimation from 'react-type-animation'
-import ImageContainer, { ImageBorder, InsertionPointer } from './styles'
+import Avatar from '../Avatar'
+import InsertionPointer from './styles'
 
 const HomeBanner: React.FC = () => {
   const [color, setColor] = useState('from-cyan-500 to-blue-500')
@@ -58,17 +58,7 @@ const HomeBanner: React.FC = () => {
           <InsertionPointer className={`bg-gradient-to-br ${color}`} />
         </div>
       </div>
-      <ImageBorder className="flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg shadow-cyan-500/50">
-        <ImageContainer className=" overflow-hidden rounded-full">
-          <Image
-            src="/assets/image/bruno.jpeg"
-            alt="Bruno Genaro Picture"
-            width={350}
-            height={350}
-            objectFit="cover"
-          />
-        </ImageContainer>
-      </ImageBorder>
+      <Avatar src="/assets/image/bruno.jpeg" alt="Bruno Genaro Picture" />
     </section>
   )
 }
