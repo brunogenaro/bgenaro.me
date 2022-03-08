@@ -1,4 +1,4 @@
-const ContactMe: React.FC = () => (
+const ContactMeSection: React.FC = () => (
   <div className="mx-auto mb-28  xl:w-2/3 2xl:w-5/12">
     <div className="pb-10">
       <h2 className="text-4xl font-bold text-gray-300">Contact Me</h2>
@@ -46,4 +46,4 @@ const ContactMe: React.FC = () => (
   </div>
 )
 
-export default ContactMe
+export default ContactMeSection
