@@ -1,17 +1,21 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import IconLink from '../IconLink'
 import ListItemLink from '../ListItemLink'
 
 const Footer: React.FC = () => (
-  <div className=" flex h-32 items-center justify-between bg-gray-300 px-20">
-    <Image
-      src="/assets/image/brandSymbol.svg"
-      alt="Bruno Genaro Brand"
-      width={75}
-      height={42.47}
-    />
-
+  <div className="mt-28 flex h-32 items-center justify-between bg-gray-300 px-20">
+    <Link href="/">
+      <a href="/">
+        <Image
+          src="/assets/image/brandSymbol.svg"
+          alt="Bruno Genaro Brand"
+          width={100}
+          height={50}
+        />
+      </a>
+    </Link>
     <nav className="self-center">
       <ul className="my-2 hidden md:flex">
         <ListItemLink
@@ -25,8 +29,8 @@ const Footer: React.FC = () => (
           customStyle="text-gray-900"
         />
         <ListItemLink
-          label="podcast"
-          redirectTo="/podcast"
+          label="podcasts"
+          redirectTo="/podcasts"
           customStyle="text-gray-900"
         />
         <ListItemLink

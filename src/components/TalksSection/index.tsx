@@ -10,27 +10,27 @@ const TalksSection: React.FC = () => (
       <TalksCard
         title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
         description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
-        path="/"
+        path="/talks/1"
         date="14 novembro 2020"
       />
       <TalksCard
         title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
         description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
-        path="/"
+        path="/talks/1"
         date="14 novembro 2020"
         customStyles="hidden md:block"
       />
       <TalksCard
         title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
         description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
-        path="/"
+        path="/talks/1"
         date="14 novembro 2020"
         customStyles="hidden xl:block"
       />
       <TalksCard
         title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
         description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
-        path="/"
+        path="/talks/1"
         date="14 novembro 2020"
         customStyles="hidden 2xl:block"
       />

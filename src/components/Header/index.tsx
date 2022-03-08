@@ -29,8 +29,8 @@ const Header: React.FC = () => (
           customStyle="text-gray-300"
         />
         <ListItemLink
-          label="podcast"
-          redirectTo="/podcast"
+          label="podcasts"
+          redirectTo="/podcasts"
           customStyle="text-gray-300"
         />
         <ListItemLink

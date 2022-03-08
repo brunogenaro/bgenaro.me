@@ -3,7 +3,6 @@ import React from 'react'
 import HomeBanner from '../components/HomeBanner'
 import ContactMeSection from '../components/ContactMeSection'
 import PodcastsSection from '../components/PodcastsSection'
-import ProjectsSection from '../components/ProjectsSection'
 import TalksSection from '../components/TalksSection'
 
 const Home: NextPage = () => (
@@ -11,7 +10,6 @@ const Home: NextPage = () => (
     <HomeBanner />
     <TalksSection />
     <PodcastsSection />
-    <ProjectsSection />
     <ContactMeSection />
   </div>
 )

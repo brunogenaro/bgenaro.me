@@ -1,5 +1,5 @@
 const ContactMeSection: React.FC = () => (
-  <div className="mx-auto mb-28  xl:w-2/3 2xl:w-5/12">
+  <div className="mx-auto xl:w-2/3 2xl:w-5/12">
     <div className="pb-10">
       <h2 className="text-4xl font-bold text-gray-300">Contact Me</h2>
       <p className="pt-4 text-xl leading-9 text-gray-300">
