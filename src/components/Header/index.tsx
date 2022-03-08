@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import ListItemLink from '../LisItemLink'
+import ListItemLink from '../ListItemLink'
 
 const Header: React.FC = () => (
   <div className="flex h-32 items-center justify-between px-20">

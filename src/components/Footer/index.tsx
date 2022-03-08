@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import IconLink from '../IconLink'
-import ListItemLink from '../LisItemLink'
+import ListItemLink from '../ListItemLink'
 
 const Footer: React.FC = () => (
   <div className=" flex h-32 items-center justify-between bg-gray-300 px-20">
