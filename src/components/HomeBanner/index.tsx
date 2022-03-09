@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import TypeAnimation from 'react-type-animation'
 import Avatar from '../Avatar'
 import InsertionPointer from './styles'
 
 const HomeBanner: React.FC = () => {
-  const [color, setColor] = useState('from-cyan-500 to-blue-500')
+  const [color] = useState('from-cyan-500 to-blue-500')
   const interval = 3000
 
   return (
@@ -36,7 +36,7 @@ const HomeBanner: React.FC = () => {
           <InsertionPointer className={`bg-gradient-to-br ${color}`} />
         </div>
       </div>
-      <Avatar src="/assets/image/bruno.jpeg" alt="Bruno Genaro Picture" />
+      <Avatar />
     </section>
   )
 }

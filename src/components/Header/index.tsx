@@ -31,7 +31,7 @@ const Header: React.FC = () => (
         />
         <ListItemLink
           label="contact me"
-          redirectTo="/contact-me"
+          redirectTo="/contact"
           customStyle="text-gray-300"
         />
       </ul>

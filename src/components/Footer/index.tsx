@@ -38,7 +38,7 @@ const Footer: React.FC = () => (
         />
         <ListItemLink
           label="contact me"
-          redirectTo="/contact-me"
+          redirectTo="/contact"
           customStyle="text-gray-900"
         />
       </ul>

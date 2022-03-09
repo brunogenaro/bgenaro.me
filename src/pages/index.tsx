@@ -10,7 +10,9 @@ const Home: NextPage = () => (
     <HomeBanner />
     <TalksSection />
     <PodcastsSection />
-    <ContactMeSection />
+    <div className="mx-auto xl:w-2/3 2xl:w-5/12">
+      <ContactMeSection />
+    </div>
   </div>
 )
 export default Home
