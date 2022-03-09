@@ -12,27 +12,27 @@ const Header: React.FC = () => (
         <ListItemLink
           label="about"
           redirectTo="/about"
-          customStyle="text-gray-300"
+          customStyle="text-gray-300 hover:text-blue-500"
         />
         <ListItemLink
           label="talks"
           redirectTo="/talks"
-          customStyle="text-gray-300"
+          customStyle="text-gray-300 hover:text-cyan-500"
         />
         <ListItemLink
           label="podcasts"
           redirectTo="/podcasts"
-          customStyle="text-gray-300"
+          customStyle="text-gray-300 hover:text-pink-500"
         />
         <ListItemLink
           label="uses"
           redirectTo="/uses"
-          customStyle="text-gray-300"
+          customStyle="text-gray-300 hover:text-yellow-500"
         />
         <ListItemLink
           label="contact me"
           redirectTo="/contact"
-          customStyle="text-gray-300"
+          customStyle="text-gray-300 hover:text-orange-500"
         />
       </ul>
     </nav>

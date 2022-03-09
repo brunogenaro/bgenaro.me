@@ -12,7 +12,7 @@ const ListItemLink: React.FC<iListItemLink> = ({
   redirectTo,
   customStyle,
 }: iListItemLink) => (
-  <li className="mx-5">
+  <li className="mx-5 transition-colors duration-200 ease-in-out">
     <Link href={redirectTo}>
       <a
         className={` text-base font-bold tracking-widest lg:text-lg ${customStyle}`}
