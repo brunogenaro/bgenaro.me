@@ -5,29 +5,7 @@ import InsertionPointer from './styles'
 
 const HomeBanner: React.FC = () => {
   const [color, setColor] = useState('from-cyan-500 to-blue-500')
-  const colors = [
-    'from-cyan-500 to-blue-500',
-    'from-pink-500 to-purple-500',
-    'from-yellow-500 to-orange-500',
-  ]
-  const [index, setIndex] = useState(0)
   const interval = 3000
-
-  const changeColor = async () => {
-    await setTimeout(() => {
-      if (index === colors.length - 1) {
-        setIndex(0)
-        setColor(colors[0])
-      } else {
-        setIndex(s => s + 1)
-        setColor(colors[index + 1])
-      }
-    }, interval)
-  }
-
-  useEffect(() => {
-    changeColor()
-  }, [index])
 
   return (
     <section className="flex items-center justify-between 2xl:px-20">
