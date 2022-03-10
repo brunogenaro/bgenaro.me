@@ -1,9 +1,10 @@
 import React from 'react'
 import TalksBanner from '../../components/TalksBanner'
 import TalksCard from '../../components/TalksCard'
+import TalksContainer from './styles'
 
 const Talks: React.FC = () => (
-  <div className="px-10 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-52">
+  <TalksContainer className="px-10 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-52">
     <TalksBanner />
     <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       <TalksCard
@@ -43,7 +44,7 @@ const Talks: React.FC = () => (
         date="14 novembro 2020"
       />
     </ul>
-  </div>
+  </TalksContainer>
 )
 
 export default Talks
