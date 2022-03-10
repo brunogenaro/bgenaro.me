@@ -1,0 +1,59 @@
+import styled from 'styled-components'
+
+export const InsertionPointer = styled.span`
+  @media (max-width: 640px) {
+    width: 5px;
+    height: 30px;
+    margin-left: -8px;
+  }
+
+  @media (min-width: 640px) {
+    width: 5px;
+    height: 30px;
+    margin-left: -8px;
+  }
+  @media (min-width: 768px) {
+    width: 6px;
+    height: 40px;
+    margin-left: -10px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 7px;
+    height: 50px;
+    margin-left: -10px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 8px;
+    height: 60px;
+    margin-left: -15px;
+  }
+
+  @media (min-width: 1536px) {
+    width: 9px;
+    height: 75px;
+    margin-left: -20px;
+  }
+
+  width: 10px;
+  height: 80px;
+  margin-left: -25px;
+
+  @keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  opacity: 1;
+  animation: flickerAnimation 2s infinite;
+`
+
+export default InsertionPointer

@@ -1,47 +1,38 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
+import Brand from '../Brand'
 import ListItemLink from '../ListItemLink'
 
 const Header: React.FC = () => (
   <div className="flex h-32 items-center justify-between px-20">
-    <Link href="/">
-      <a href="/">
-        <Image
-          src="/assets/image/brand.svg"
-          alt="Bruno Genaro Brand"
-          width={100}
-          height={50}
-        />
-      </a>
-    </Link>
+    <Brand />
     <nav className="hidden self-center md:flex">
       <ul className="my-2 flex">
         <ListItemLink
           label="about"
           redirectTo="/about"
-          customStyle="text-gray-300"
+          customStyle="text-gray-300 hover:text-blue-500"
         />
         <ListItemLink
           label="talks"
           redirectTo="/talks"
-          customStyle="text-gray-300"
+          customStyle="text-gray-300 hover:text-cyan-500"
         />
         <ListItemLink
-          label="podcast"
-          redirectTo="/podcast"
-          customStyle="text-gray-300"
+          label="podcasts"
+          redirectTo="/podcasts"
+          customStyle="text-gray-300 hover:text-pink-500"
         />
         <ListItemLink
           label="uses"
           redirectTo="/uses"
-          customStyle="text-gray-300"
+          customStyle="text-gray-300 hover:text-yellow-500"
         />
         <ListItemLink
           label="contact me"
-          redirectTo="/contact-me"
-          customStyle="text-gray-300"
+          redirectTo="/contact"
+          customStyle="text-gray-300 hover:text-orange-500"
         />
       </ul>
     </nav>
