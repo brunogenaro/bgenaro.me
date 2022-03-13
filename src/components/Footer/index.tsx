@@ -45,24 +45,31 @@ const Footer: React.FC = () => (
     </nav>
     <div className="hidden lg:flex">
       <IconLink
+        source="instagram.svg"
+        label="instagram"
+        redirectTo="https://www.instagram.com/brunogenaro/"
+      />
+      <IconLink
+        source="facebook.svg"
+        label="facebook"
+        redirectTo="https://www.facebook.com/bruno.genaro"
+      />
+      <IconLink
         source="twitter.svg"
         label="twitter"
-        redirectTo="https://www.twitter.com/brunogenaro"
+        redirectTo="https://twitter.com/bfgenaro"
       />
-      <IconLink
-        source="github.svg"
-        label="github"
-        redirectTo="https://www.github.com/brunogenaro"
-      />
-      <IconLink
-        source="telegram.svg"
-        label="telegram"
-        redirectTo="https://www.telegram.com/brunogenaro"
-      />
+
       <IconLink
         source="linkedin.svg"
         label="linkedin"
-        redirectTo="https://www.linkedin.com/brunogenaro"
+        redirectTo="https://www.linkedin.com/in/brunogenaro/"
+      />
+
+      <IconLink
+        source="github.svg"
+        label="github"
+        redirectTo="https://github.com/brunogenaro"
       />
     </div>
   </div>
