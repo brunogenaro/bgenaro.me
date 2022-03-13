@@ -24,21 +24,9 @@ export const InsertionPointer = styled.span`
     margin-left: -10px;
   }
 
-  @media (min-width: 1280px) {
-    width: 8px;
-    height: 60px;
-    margin-left: -15px;
-  }
-
-  @media (min-width: 1536px) {
-    width: 9px;
-    height: 75px;
-    margin-left: -20px;
-  }
-
-  width: 10px;
-  height: 80px;
-  margin-left: -25px;
+  width: 8px;
+  height: 60px;
+  margin-left: -15px;
 
   @keyframes flickerAnimation {
     0% {
