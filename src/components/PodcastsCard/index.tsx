@@ -21,12 +21,12 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
   <li className={`mx-1 h-fit 2xl:mx-2 ${customStyles}`}>
     <Link href={path}>
       <a href={path} className={`flex  items-center ${alignment}`}>
-        <div className="relative z-10 -mr-8 flex items-center justify-center rounded-xl bg-purple-500 p-4">
+        <div className="z-10 -mr-8 flex items-center justify-center rounded-xl bg-purple-500 p-4">
           <Image
             src="/assets/image/podcasts.svg"
             alt="talk image"
-            width={32}
-            height={32}
+            width={64}
+            height={64}
           />
         </div>
         <div className="flex h-fit rounded-3xl bg-gray-800 ">
