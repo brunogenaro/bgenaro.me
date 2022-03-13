@@ -22,7 +22,7 @@ const TalksSection: React.FC = () => (
       />
       <TalksCard
         title="The Future of React With Universal Applications"
-        description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. "
+        description=""
         path="https://www.youtube.com/watch?v=D9a2ovt_CrU"
         date="9 Fev 2017"
         customStyles="hidden xl:block"
