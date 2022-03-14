@@ -31,11 +31,11 @@ const Footer: React.FC = () => (
           redirectTo="/podcasts"
           customStyle="text-gray-900"
         />
-        <ListItemLink
+        {/* <ListItemLink
           label="uses"
           redirectTo="/uses"
           customStyle="text-gray-900"
-        />
+        /> */}
         <ListItemLink
           label="contact me"
           redirectTo="/contact"
