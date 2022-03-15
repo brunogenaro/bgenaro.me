@@ -13,39 +13,53 @@ interface iCareer {
 const CareerSection: React.FC = () => {
   const Career: iCareer[] = [
     {
-      title: 'Desenvolvedor Web',
+      title: 'Chief Executive Officer',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis dapibus magna. Etiam in ipsum tempor, maximus ante vel, feugiat urna. Aenean faucibus at purus et sagittis. Donec non aliquam quam. Curabitur eu ex arcu. Aliquam pellentesque dolor sit amet nisi auctor, sit amet cursus odio porttitor. Suspendisse maximus porttitor sem id dignissim. Suspendisse aliquam accumsan dui. Morbi ut purus eu arcu rhoncus porta eget a nibh. Vivamus vel tempor arcu. Donec nec euismod augue. Morbi malesuada ligula augue, vitae interdum ante fringilla vitae. Donec volutpat metus vel velit hendrerit feugiat. Morbi velit nisi, eleifend feugiat eros viverra, rhoncus pellentesque magna. Nullam non venenatis metus, vitae hendrerit purus.',
-      company: { name: 'Cisco', url: 'https://www.cisco.com/' },
-      date: '14 novembro 2020',
+        'Worked as Developer and Managing Developers in multiple projects from small to large clients.',
+      company: {
+        name: 'WebSolutionsFL',
+        url: 'https://www.websolutionsfl.com/',
+      },
+      date: 'mar 2013 - present',
     },
     {
-      title: 'Desenvolvedor Backend',
+      title: 'Senior Software Engineer',
       description:
-        'Ut purus lacus, suscipit nec ullamcorper id, volutpat rutrum libero. Nunc dignissim vulputate odio, ac ullamcorper urna. Proin at dolor nec dui pulvinar blandit. Donec scelerisque imperdiet magna, vitae viverra ante egestas volutpat. Etiam dictum lorem nec libero varius porttitor. In placerat quam mattis iaculis hendrerit. Curabitur a massa finibus quam molestie porttitor. Donec non faucibus purus. Curabitur sed congue arcu, et euismod lorem. Vivamus faucibus dictum metus non ultricies. Curabitur eget tortor volutpat, tincidunt odio ut, egestas augue. Quisque a neque quis mi ultrices auctor. Nulla facilisi. Nunc volutpat, mi eget tincidunt vestibulum, justo urna vestibulum massa, eget faucibus elit lacus at elit.',
-      company: { name: 'Apple', url: 'https://www.apple.com/' },
-      date: '04 julho 2001',
+        'Developed the Developers Documentation and Tools to help devs use their API. Worked with technologies such as React.js, Next.js, Node.js, Apollo, GraphQL, Styled Components and Cypress.io.',
+      company: { name: 'Mapped', url: 'https://www.mapped.com/' },
+      date: 'dez 2020 - present',
     },
     {
-      title: 'Desenvolvedor Sr Backend',
+      title: 'Senior Software Engineer',
       description:
-        'Nulla orci lorem, blandit vitae pharetra a, finibus eu magna. Nam iaculis condimentum risus vitae vehicula. Praesent lobortis, odio vel placerat molestie, enim risus condimentum sapien, nec iaculis leo risus id arcu. Praesent ut lorem hendrerit, viverra turpis ut, finibus nisl. Curabitur dapibus erat quis velit placerat luctus. Nulla facilisi. Quisque hendrerit, massa et posuere tempor, turpis eros fermentum ligula, eu feugiat diam mi eu magna. Sed semper, sem non dictum fermentum, elit lectus ultricies elit, eget fringilla mi magna finibus massa. Aenean vel massa sapien. Nullam nec ligula eget eros accumsan faucibus et in dolor. Pellentesque a mi ex. Phasellus in ante in lectus rutrum molestie. Sed convallis, tellus eu accumsan mollis, elit velit molestie tortor, sit amet pretium elit tortor id eros. Aliquam consequat pellentesque quam, eget bibendum nisi rhoncus nec. Cras facilisis, lorem ac molestie blandit, felis tortor euismod ligula, in hendrerit justo leo nec nibh. Sed eu metus odio.',
-      company: { name: 'Google', url: 'https://www.google.com/' },
-      date: '13 janeiro 2012',
+        'Developed the new Webex Marketplace (App Hub) to increase customer engagement of Webex Collaboration apps through its platform adoption. Responsible for key product features in Webex Teams enterprise collaboration app, launch, and growth of Webex App store. Developed the new Developer Portal. I was responsible for all the UI/UX and also development integration for the Blog and API Changelog.',
+      company: { name: 'Cisco Sytems', url: 'https://www.cisco.com/' },
+      date: 'mai 2016 - nov 2020',
     },
     {
-      title: 'Desenvolvedor Sr Fullstack',
+      title: 'Lead Front-End / Mobile App Developer',
       description:
-        'Nam feugiat, augue nec congue aliquam, neque ex aliquam turpis, quis porttitor dui turpis interdum metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur laoreet placerat sapien a gravida. Sed fringilla tellus eget massa ultricies varius. Ut posuere, purus eu hendrerit dapibus, leo risus congue diam, eu tristique metus ex quis ex. Curabitur dui quam, blandit nec mi in, accumsan congue odio. Vivamus placerat nisl eu felis pharetra, at tincidunt dui molestie. Maecenas fringilla turpis neque, maximus vestibulum elit maximus vel. Curabitur convallis nibh at arcu molestie pulvinar. Duis tincidunt fringilla libero, sed vehicula neque tempor non. Cras posuere felis elementum, laoreet ligula a, maximus nisl. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vitae mattis dui. Vestibulum quis diam commodo, pulvinar neque id, tincidunt ligula.',
-      company: { name: 'Facebook', url: 'https://www.facebook.com/' },
-      date: '14 maio 2015',
+        'Managed the Front-End team focusing on workow improvements and best practices. Developed multiple native mobile applications (Android and iOS) using Appcelerator Titanium and Alloy framework. Managed and maintained mid to large-scale JavaScript applications using BackboneJS and AngularJS. Integrated web and mobile applications with RESTful APIs. Integrated third-party APIs, such as Google Maps, Facebook and Twitter. Developed custom websites using Wordpress. Developed custom Themes, Plugins and Post Types/Fields for Wordpress. Managed and maintained PHP websites using MySQL database. Created user interfaces from strict requirements with JavaScript, jQuery, HTML5, CSS3, Sass, Bootstrap and Foundation. Used Node.js solutions for development workflow using NPM, Yeoman, Bower Grunt and Gulp. Implemented new workow processes including GruntJS, Sass, and JavaScript linters.',
+      company: { name: 'Concepta', url: 'https://www.conceptatech.com/' },
+      date: 'mai 2013 - mai 2016',
     },
     {
-      title: 'Desenvolvedor Sr Fullstack',
-      description:
-        'Ut congue iaculis est, ornare pretium nibh commodo vel. Maecenas blandit mattis mauris in elementum. Proin sapien sapien, condimentum a tellus ut, convallis interdum libero. Praesent lobortis nibh a tortor pellentesque sodales. Curabitur sit amet tortor pellentesque, maximus lectus eget, eleifend arcu. Mauris vitae congue ipsum. Morbi scelerisque vitae metus in tempor. Nulla pellentesque hendrerit leo, sed cursus mauris pharetra nec. Proin pellentesque egestas elementum. Aliquam gravida lectus vel eleifend elementum. Suspendisse dictum felis enim. Cras semper pretium sodales. Maecenas lacinia, libero at fermentum eleifend, lacus ante commodo mauris, nec sollicitudin lacus nunc at magna. Nam pretium condimentum hendrerit. Donec consequat justo sit amet gravida sodales. Ut tincidunt mollis lorem, vitae imperdiet augue euismod ac.',
-      company: { name: 'Amazon', url: 'https://www.amazon.com/' },
-      date: '08 abril 2010',
+      title: 'Lead Full Stack Developer',
+      description: '',
+      company: {
+        name: 'WebServConsulting',
+        url: 'http://www.webservconsulting.com/',
+      },
+      date: 'dez 2011 - jan 2013',
+    },
+    {
+      title: 'Web Developer',
+      description: '',
+      company: {
+        name: 'Triade Tecnologia',
+        url: 'https://www.triadetecnologia.com.br/',
+      },
+      date: 'mar 2008 - mar 2011 ',
     },
   ]
 
@@ -56,7 +70,7 @@ const CareerSection: React.FC = () => {
 
   return (
     <section className="mt-10 grid grid-cols-2 gap-20 text-xl leading-8 tracking-wider text-gray-300">
-      <ul className="col-start-1 col-end-1 mt-16 justify-self-end text-center">
+      <ul className="col-start-1 col-end-1 mt-16 justify-self-end text-right">
         {Career.map(item => (
           <li
             key={item.company.name}

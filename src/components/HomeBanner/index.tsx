@@ -18,19 +18,26 @@ const HomeBanner: React.FC = () => {
         </h1>
         <div className="flex items-center">
           <h2
-            className={`bg-gradient-to-br ${color} bg-clip-text text-3xl font-bold tracking-wide text-transparent sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl`}
+            className={`bg-gradient-to-br ${color} bg-clip-text text-3xl font-bold tracking-wide text-transparent sm:text-4xl md:text-5xl lg:text-6xl `}
           >
             <TypeAnimation
               cursor
               sequence={[
-                'speaker',
+                'Senior Software Engineer',
                 interval,
-                'developer',
+                'JavaScript Consultant',
+                'and CEO at WebSolutionsFL',
                 interval,
-                'father',
+                'Speaker',
                 interval,
+                'Event Producer',
+                interval,
+                'OrlandoJS Meetup Co-Organizer',
+                interval,
+                'Father to two beautiful daughters',
               ]}
               repeat={Infinity}
+              className="pb-3"
             />
           </h2>
           <InsertionPointer className={`bg-gradient-to-br ${color}`} />

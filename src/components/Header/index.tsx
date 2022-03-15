@@ -24,11 +24,11 @@ const Header: React.FC = () => (
           redirectTo="/podcasts"
           customStyle="text-gray-300 hover:text-pink-500"
         />
-        <ListItemLink
+        {/* <ListItemLink
           label="uses"
           redirectTo="/uses"
           customStyle="text-gray-300 hover:text-yellow-500"
-        />
+        /> */}
         <ListItemLink
           label="contact me"
           redirectTo="/contact"
@@ -37,7 +37,7 @@ const Header: React.FC = () => (
       </ul>
     </nav>
     <div className="hidden md:flex">
-      <Image src="/assets/image/moon.svg" alt="Moon" width={24} height={24} />
+      {/* <Image src="/assets/image/moon.svg" alt="Moon" width={24} height={24} /> */}
     </div>
   </div>
 )
