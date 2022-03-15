@@ -11,18 +11,7 @@ const ContactMeSection: React.FC = () => {
     <div>
       <div className="pb-10">
         <h2 className="text-4xl font-bold text-gray-300">Contact Me</h2>
-        <p className="pt-4 text-xl leading-9 text-gray-300">
-          Hey, I&rsquo;m Bruno Genaro. I started developing websites back in
-          2003, working in a music portal called ZineKaos.com.br (RIP), which
-          you still can see its last version created in 2005. I&rsquo;m
-          currently the CEO of WebSolutionsFL, where we offer consultancy and
-          outsourcing work focused mainly on JavaScript/TypeScript (React, React
-          Native, and Node.js). I&rsquo;m originally from Brazil, and now I live
-          in Orlando (Florida). When I&rsquo;m not coding, you can see me at the
-          gym, concerts, skateboarding, playing drums, reading books, taking
-          online courses, producing events, or enjoying the fantastic Florida
-          weather with my beautiful two daughters, Sophie and Stella.
-        </p>
+        <p className="pt-4 text-xl leading-9 text-gray-300">hello@bgenar.me</p>
       </div>
       <div className="text-xl">
         <div className="mb-4 flex">
@@ -47,14 +36,14 @@ const ContactMeSection: React.FC = () => {
             onChange={e => setSubject(e.target.value)}
           />
         </div>
-        <div>
+        {/* <div>
           <input
             className="h-56 w-full rounded-xl bg-gray-800 p-4 text-blue-500 placeholder:text-blue-500"
             placeholder="message"
             type="text"
             onChange={e => setMessage(e.target.value)}
           />
-        </div>
+        </div> */}
       </div>
       <button
         className="mt-5 rounded-3xl border-2 border-blue-500 p-3 text-xl font-bold  text-blue-500"
