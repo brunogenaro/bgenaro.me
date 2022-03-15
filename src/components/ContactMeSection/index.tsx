@@ -2,9 +2,9 @@ import { useState } from 'react'
 
 const ContactMeSection: React.FC = () => {
   const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
+  const [message] = useState('')
   const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
+  // const [email, setEmail] = useState('')
   const mailto = 'hello@bgenar.me'
 
   return (
@@ -25,7 +25,7 @@ const ContactMeSection: React.FC = () => {
             className="w-1/2 rounded-xl bg-gray-800 p-4 text-blue-500 placeholder:text-blue-500"
             placeholder="email"
             type="text"
-            onChange={e => setEmail(e.target.value)}
+            // onChange={e => setEmail(e.target.value)}
           />
         </div>
         <div className="mb-4">
