@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import Image from 'next/image'
 import React from 'react'
 import Brand from '../Brand'
 import ListItemLink from '../ListItemLink'
