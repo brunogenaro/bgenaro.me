@@ -20,6 +20,7 @@ const Talks: React.FC = () => (
         path="https://mobile.twitter.com/bfgenaro/status/1224722280112062464"
         date="2020"
         location="Meetup DevelopersBr - Sao Paulo"
+        img="3.jpg"
       />
       <TalksCard
         title="Full JAM Stack React Developer"
@@ -27,6 +28,7 @@ const Talks: React.FC = () => (
         path="https://www.meetup.com/OrlandoJS/events/264367392/"
         date="2019"
         location="OrlandoJS"
+        img="2.jpg"
       />
       <TalksCard
         title="React e comunidade salvaram minha vida"
@@ -34,6 +36,7 @@ const Talks: React.FC = () => (
         path="https://www.instagram.com/p/B7-AxJWl_EG/"
         date="2020"
         location="Meetup HTML SP"
+        img="3.jpg"
       />
       <TalksCard
         title="Server-Side Rendering with ReactJS"
@@ -48,6 +51,7 @@ const Talks: React.FC = () => (
         path="https://www.youtube.com/watch?v=sF__9OISv_E"
         date="2017"
         location="Front In Sampa"
+        img="2.jpg"
       />
       <TalksCard
         title="Universal ReactJS"
@@ -63,6 +67,7 @@ const Talks: React.FC = () => (
         path="https://www.meetup.com/OrlandoJS/events/231758882/"
         date="2016"
         location="OrlandoJS"
+        img="3.jpg"
       />
 
       <TalksCard
@@ -78,6 +83,7 @@ const Talks: React.FC = () => (
         path="https://www.meetup.com/Front-End-Orlando/events/232278131/"
         date="2016"
         location="Front End Devs Orlando"
+        img="3.jpg"
       />
       <TalksCard
         title="Essential JavaScript Libraries to Improve Your Workflow"
@@ -92,6 +98,7 @@ const Talks: React.FC = () => (
         path="https://www.meetup.com/Front-End-Orlando/events/219671178/"
         date="2015"
         location="Front End Devs Orlando"
+        img="2.jpg"
       />
     </ul>
   </TalksContainer>

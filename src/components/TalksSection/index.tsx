@@ -12,6 +12,7 @@ const TalksSection: React.FC = () => (
         description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. Além disso é consultor JavaScript focado em React JS e Organizador do Orlando JS Meetup."
         path="https://www.youtube.com/watch?v=BmJ1GcAwM3g"
         date="2020"
+        img="2.jpg"
         location="Online - Piracicaba"
       />
       <TalksCard
@@ -27,6 +28,7 @@ const TalksSection: React.FC = () => (
         path="https://www.meetup.com/OrlandoJS/events/264367392/"
         date="2019"
         location="OrlandoJS"
+        img="3.jpg"
       />
       <TalksCard
         title="React e comunidade salvaram minha vida"

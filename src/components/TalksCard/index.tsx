@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 interface iTalksCard {
   title: string
@@ -59,7 +58,7 @@ export const TalksCard: React.FC<iTalksCard> = ({
 TalksCard.defaultProps = {
   customStyles: '',
   location: '',
-  img: 'blue.jpg',
+  img: '1.jpg',
 }
 
 export default TalksCard
