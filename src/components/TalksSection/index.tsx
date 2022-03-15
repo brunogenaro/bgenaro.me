@@ -6,26 +6,34 @@ const TalksSection: React.FC = () => (
     <h3 className="ml-5 mb-10 bg-gradient-to-br from-cyan-500 to-blue-500 bg-clip-text pb-3 text-2xl font-bold tracking-wide text-transparent sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  2xl:text-7xl">
       talks
     </h3>
-    <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+    <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       <TalksCard
         title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
         description="Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. Além disso é consultor JavaScript focado em React JS e Organizador do Orlando JS Meetup."
         path="https://www.youtube.com/watch?v=BmJ1GcAwM3g"
-        date="5 dez 2020"
+        date="2020"
+        location="Online - Piracicaba"
       />
       <TalksCard
-        title="Renderizando componentes React no servidor"
-        description="O ReactJS tem a poderosa habilidade de renderizar seus componentes no servidor. Nesta apresentação Bruno irá mostrar os benefícios e também como e quando podemos explorar esta prática."
-        path="https://www.youtube.com/watch?v=sF__9OISv_E"
-        date="5 set 2017"
-        customStyles="hidden md:block"
-      />
-      <TalksCard
-        title="The Future of React With Universal Applications"
+        title="Dicas de como evoluir profissionalmente como Desenvolvedor de Software (também no exterior)"
         description=""
-        path="https://www.youtube.com/watch?v=D9a2ovt_CrU"
-        date="9 Fev 2017"
-        customStyles="hidden xl:block"
+        path="https://mobile.twitter.com/bfgenaro/status/1224722280112062464"
+        date="2020"
+        location="Meetup DevelopersBr - Sao Paulo"
+      />
+      <TalksCard
+        title="Full JAM Stack React Developer"
+        description="The JAM stack is a modern web development architecture based on client-side JavaScript and reusable APIs."
+        path="https://www.meetup.com/OrlandoJS/events/264367392/"
+        date="2019"
+        location="OrlandoJS"
+      />
+      <TalksCard
+        title="React e comunidade salvaram minha vida"
+        description=""
+        path="https://www.instagram.com/p/B7-AxJWl_EG/"
+        date="2020"
+        location="Meetup HTML SP"
       />
     </ul>
     <SeeAll title="talks" path="/talks" />
