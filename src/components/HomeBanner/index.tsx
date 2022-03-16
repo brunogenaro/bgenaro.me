@@ -11,7 +11,7 @@ const HomeBanner: React.FC = () => {
     <section className="flex items-center justify-between 2xl:px-20">
       <div>
         <span className="ml-1 text-sm tracking-wide text-gray-300 sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-          Hello, I&apos;m
+          Hello, I&#8216;m
         </span>
         <h1 className="text-3xl font-bold tracking-wide text-gray-300 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Bruno Genaro
