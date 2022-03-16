@@ -39,6 +39,7 @@ const Menu = () => {
           <NavigationList
             listStyle="fixed top-0 left-0 z-40 my-auto h-full w-full flex-col content-center items-center justify-center bg-gray-800 pt-56 text-center align-middle md:hidden"
             itemStyle="mb-10"
+            closeMenu={() => setIsOpen(false)}
           />
         )}
       </nav>
