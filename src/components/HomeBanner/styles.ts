@@ -43,5 +43,19 @@ export const InsertionPointer = styled.span`
   opacity: 1;
   animation: flickerAnimation 2s infinite;
 `
+export const ColorAnimation = styled.div`
+  @keyframes ColorAnimation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(360deg);
+    }
+    100% {
+      filter: hue-rotate(0deg);
+    }
+  }
+  animation: ColorAnimation 100s infinite;
+`
 
 export default InsertionPointer

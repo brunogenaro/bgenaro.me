@@ -6,7 +6,7 @@ import CareerSection from '../../components/CareerSection'
 const About: React.FC = () => (
   <div className="mt-10 text-gray-300">
     <div className="grid grid-cols-2 gap-20">
-      <div className="mt-20 self-start justify-self-end">
+      <div className="relative mt-20 self-start justify-self-end">
         <Avatar />
       </div>
       <div className="w-2/3">
