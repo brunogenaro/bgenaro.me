@@ -1,13 +1,13 @@
 import TypeAnimation from 'react-type-animation'
 import Avatar from '../Avatar'
-import InsertionPointer, { ColorAnimation } from './styles'
+import InsertionPointer, { ColorAnimation, SpaceHolder } from './styles'
 
 const HomeBanner: React.FC = () => {
   const color = 'from-cyan-500 to-blue-500'
   const interval = 3000
 
   return (
-    <section className="relative mt-32 mb-52 flex items-center justify-between 2xl:px-20">
+    <section className="relative my-32 flex items-center justify-between 2xl:px-20">
       <div>
         <span className="ml-1 text-sm tracking-wide text-gray-300 sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
           Hello, I&#8216;m
@@ -44,6 +44,7 @@ const HomeBanner: React.FC = () => {
           <InsertionPointer className={`bg-gradient-to-br ${color}`} />
         </ColorAnimation>
       </div>
+      <SpaceHolder />
       <Avatar />
     </section>
   )

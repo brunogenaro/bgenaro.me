@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const ImageContainer = styled.div`
-  left: 4px;
-  top: 4px;
+  left: 6px;
+  top: 6px;
   @media (max-width: 640px) {
     width: 140px;
     height: 140px;
@@ -51,36 +51,36 @@ export const ImageBorder = styled.div`
   animation: ColorAnimation 100s infinite;
 
   @media (max-width: 640px) {
-    width: 148px;
-    height: 148px;
+    width: 152px;
+    height: 152px;
   }
 
   @media (min-width: 640px) {
-    width: 148px;
-    height: 148px;
+    width: 152px;
+    height: 152px;
   }
   @media (min-width: 768px) {
-    width: 218px;
-    height: 218px;
+    width: 222px;
+    height: 222px;
   }
 
   @media (min-width: 1024px) {
-    width: 248px;
-    height: 248px;
+    width: 252px;
+    height: 252px;
   }
 
   @media (min-width: 1280px) {
-    width: 288px;
-    height: 288px;
+    width: 292px;
+    height: 292px;
   }
 
   @media (min-width: 1536px) {
-    width: 308px;
-    height: 308px;
+    width: 312px;
+    height: 312px;
   }
 
-  width: 358px;
-  height: 358px;
+  width: 362px;
+  height: 362px;
 `
 
 export const AvatarPosition = styled.div`
