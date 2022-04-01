@@ -12,8 +12,7 @@ interface iFormData {
 }
 
 const ContactMeSection: React.FC = () => {
-  // const mailto = 'hello@bgenar.me'
-  const mailto = 'mcorreadesign@gmail.com'
+  const mailto = 'hello@bgenaro.me'
   const submit = ({ subject, email, message, name }: iFormData) => {
     toast
       .promise(
