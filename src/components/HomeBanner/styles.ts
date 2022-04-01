@@ -43,5 +43,53 @@ export const InsertionPointer = styled.span`
   opacity: 1;
   animation: flickerAnimation 2s infinite;
 `
+export const ColorAnimation = styled.div`
+  @keyframes ColorAnimation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(360deg);
+    }
+    100% {
+      filter: hue-rotate(0deg);
+    }
+  }
+  animation: ColorAnimation 100s infinite;
+`
+
+export const SpaceHolder = styled.div`
+  @media (max-width: 640px) {
+    width: 152px;
+    height: 152px;
+  }
+
+  @media (min-width: 640px) {
+    width: 152px;
+    height: 152px;
+  }
+  @media (min-width: 768px) {
+    width: 222px;
+    height: 222px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 252px;
+    height: 252px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 292px;
+    height: 292px;
+  }
+
+  @media (min-width: 1536px) {
+    width: 312px;
+    height: 312px;
+  }
+
+  width: 362px;
+  height: 362px;
+`
 
 export default InsertionPointer
