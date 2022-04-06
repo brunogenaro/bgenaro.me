@@ -3,14 +3,14 @@ import React, { useState } from 'react'
 import NavigationList from '../NavigationList'
 
 const Menu = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
       <button
         type="button"
         onClick={() => setIsOpen(s => !s)}
-        className="fixed top-10 right-10 z-50 block md:hidden"
+        className="fixed top-10 right-10 z-50  flex rounded-md bg-gray-900 p-2 md:hidden"
       >
         {isOpen ? (
           <Image
