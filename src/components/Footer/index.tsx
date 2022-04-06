@@ -6,14 +6,16 @@ import ListItemLink from '../ListItemLink'
 
 const Footer: React.FC = () => (
   <div className="mt-28 flex h-32 items-center justify-between bg-gray-300 px-20">
-    <Link href="/" passHref>
-      <Image
-        src="/assets/image/brandSymbol.svg"
-        alt="Bruno Genaro Brand"
-        width={100}
-        height={50}
-      />
-    </Link>
+    <div className="cursor-pointer">
+      <Link href="/" passHref>
+        <Image
+          src="/assets/image/brandSymbol.svg"
+          alt="Bruno Genaro Brand"
+          width={100}
+          height={50}
+        />
+      </Link>
+    </div>
     <nav className="self-center">
       <ul className="my-2 hidden md:flex">
         <ListItemLink
