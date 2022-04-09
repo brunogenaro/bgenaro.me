@@ -19,7 +19,9 @@ export const TalksCard: React.FC<iTalksCard> = ({
   location,
   img,
 }: iTalksCard) => (
-  <li className={`rounded-3xl bg-gray-800 ${customStyles}`}>
+  <li
+    className={`rounded-3xl bg-gray-800 ${customStyles}  duration-150 ease-in-out hover:scale-105 `}
+  >
     <a href={path} target="_blank" rel="noreferrer">
       <div>
         <div className="h-72 w-full overflow-hidden rounded-3xl">

@@ -19,7 +19,9 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
   alignment,
   img,
 }: iPodcastsCard) => (
-  <li className={`mx-1 2xl:mx-2 ${customStyles}`}>
+  <li
+    className={`mx-1 2xl:mx-2 ${customStyles} duration-150 ease-in-out hover:scale-105`}
+  >
     <a
       href={path}
       className={`flex  items-center ${alignment}`}

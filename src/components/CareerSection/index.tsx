@@ -74,7 +74,7 @@ const CareerSection: React.FC = () => {
         {Career.map(item => (
           <li
             key={item.company.name}
-            className={`rounded-l-2xl border-r-2 border-gray-300 px-5 py-1  transition delay-100 ease-in-out hover:border-blue-400 hover:bg-gray-700 hover:text-blue-400 ${
+            className={`flex rounded-l-2xl border-r-2 border-gray-300 px-5 py-1  transition delay-100 ease-in-out hover:border-blue-400 hover:bg-gray-700 hover:text-blue-400 ${
               isActive(item) && 'border-blue-400 bg-gray-700 text-blue-400'
             }`}
           >
