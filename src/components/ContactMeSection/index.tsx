@@ -48,7 +48,7 @@ const ContactMeSection: React.FC = () => {
       validationSchema={SubmitSchema}
       onSubmit={submit}
     >
-      {({ errors, touched, isValid }) => (
+      {({ errors, touched }) => (
         <Form>
           <Toaster />
           <div className="pb-10">
