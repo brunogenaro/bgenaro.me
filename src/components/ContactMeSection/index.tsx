@@ -48,7 +48,7 @@ const ContactMeSection: React.FC = () => {
       validationSchema={SubmitSchema}
       onSubmit={submit}
     >
-      {({ errors, touched }) => (
+      {({ errors, touched, isValid }) => (
         <Form>
           <Toaster />
           <div className="pb-10">
@@ -89,12 +89,19 @@ const ContactMeSection: React.FC = () => {
               fieldCustomClass="h-full"
             />
           </div>
-          <button
-            className="row-start-6 mt-10 box-content rounded-3xl border-2 border-blue-500 p-3  text-xl font-bold text-blue-500 duration-300 ease-in-out hover:bg-blue-500 hover:text-gray-300"
-            type="submit"
-          >
-            send message
-          </button>
+          <div className="flex justify-end">
+            <button
+              className={
+                Object.keys(errors).length > 0 ||
+                Object.keys(touched).length < 3
+                  ? `mt-10 box-content rounded-xl border-2 border-blue-900  p-3 text-xl font-bold  text-blue-900 duration-200 ease-in-out hover:scale-105`
+                  : `mt-10 box-content rounded-xl border-2 border-blue-500  p-3 text-xl font-bold  text-blue-500 duration-200 ease-in-out hover:scale-105`
+              }
+              type="submit"
+            >
+              Send Message
+            </button>
+          </div>
         </Form>
       )}
     </Formik>
