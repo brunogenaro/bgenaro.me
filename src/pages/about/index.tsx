@@ -29,7 +29,7 @@ const About: React.FC = () => {
                 navigator.clipboard.writeText(text)
                 toast.success('Copied to clipboard')
               }}
-              className="flex items-center justify-center rounded-md border-2 border-blue-500 p-2 align-middle text-gray-300"
+              className="flex items-center justify-center rounded-md border-2 border-transparent p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out hover:border-blue-500"
             >
               <Image
                 src="/assets/image/copy.svg"
@@ -37,14 +37,12 @@ const About: React.FC = () => {
                 width={24}
                 height={24}
               />
-              <span className="ml-2 text-lg font-bold text-blue-500">
-                Copy Text
-              </span>
+              <span className="ml-2 ">Copy Text</span>
             </button>
             <a
               href="/assets/image/bruno.jpeg"
               download="Bruno Genaro Profile Picture"
-              className="ml-5 flex items-center justify-center rounded-md border-2 border-blue-500 p-2 align-middle text-gray-300"
+              className="ml-5 flex items-center justify-center rounded-md border-2 border-transparent p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out hover:border-blue-500"
             >
               <Image
                 src="/assets/image/download.svg"
@@ -52,9 +50,7 @@ const About: React.FC = () => {
                 width={24}
                 height={24}
               />
-              <span className="ml-2 text-lg font-bold text-blue-500">
-                Download Image
-              </span>
+              <span className="ml-2">Download Image</span>
             </a>
           </div>
         </div>
