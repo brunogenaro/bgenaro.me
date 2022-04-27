@@ -5,10 +5,10 @@ import Menu from '../Menu'
 
 const Header: React.FC = () => (
   <div className="flex h-32 items-center justify-between px-20">
-    <Brand customClass="cursor-pointer" />
+    <Brand />
     <Menu />
     <div className="hidden md:flex">
-      {/* <Image src="/assets/image/moon.svg" alt="Moon" width={24} height={24} /> */}
+      {/* <Image src="/assets/image/svg/action/moon.svg" alt="Moon" width={24} height={24} /> */}
     </div>
   </div>
 )

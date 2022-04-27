@@ -26,7 +26,7 @@ export const TalksCard: React.FC<iTalksCard> = ({
       <div>
         <div className="h-72 w-full overflow-hidden rounded-3xl">
           <Image
-            src={`/assets/image/${img}`}
+            src={`/assets/image/bitmap/${img}`}
             alt="talk image"
             objectFit="cover"
             width="100%"
@@ -36,7 +36,7 @@ export const TalksCard: React.FC<iTalksCard> = ({
         </div>
         <div className="relative -mt-10 -ml-5 flex h-fit w-fit items-center justify-center rounded-xl bg-blue-500 p-4">
           <Image
-            src="/assets/image/talks.svg"
+            src="/assets/image/svg/category/talks.svg"
             alt="talk image"
             width={32}
             height={32}

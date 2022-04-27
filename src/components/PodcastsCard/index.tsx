@@ -30,7 +30,7 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
     >
       <div className="relative z-10 -mr-10 flex h-fit w-fit items-center justify-center rounded-xl bg-purple-500 p-4">
         <Image
-          src="/assets/image/podcasts.svg"
+          src="/assets/image/svg/category/podcasts.svg"
           alt="talk image"
           width={32}
           height={32}
@@ -39,7 +39,7 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
       <div className="flex w-full rounded-3xl bg-gray-800">
         <div className="relative h-48 w-1/3 overflow-hidden rounded-3xl">
           <Image
-            src={`/assets/image/${img}`}
+            src={`/assets/image/bitmap/${img}`}
             alt="talk image"
             objectFit="cover"
             layout="fill"

@@ -22,7 +22,7 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
         <div>
           <div className="absolute z-10 -mt-5 -ml-5 flex h-fit w-fit items-center justify-center rounded-xl bg-orange-500 p-4">
             <Image
-              src="/assets/image/projects.svg"
+              src="/assets/image/svg/category/projects.svg"
               alt="talk image"
               width={32}
               height={32}
@@ -30,7 +30,7 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
           </div>
           <div className="h-72 w-full  overflow-hidden rounded-3xl">
             <Image
-              src="/assets/image/orange.jpg"
+              src="/assets/image/bitmap/defaultCardCover/orange.jpg"
               alt="talk image"
               objectFit="cover"
               width="100%"

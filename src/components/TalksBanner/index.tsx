@@ -17,7 +17,7 @@ const TalksBanner: React.FC = () => (
       <div className="z-20 flex">
         <div className="-mr-20">
           <ImageShadow
-            src="/assets/image/videoCamera.png"
+            src="/assets/image/bitmap/3dIcon/videoCamera.png"
             alt="Video Camera"
             width={300}
             height={300}
@@ -25,7 +25,7 @@ const TalksBanner: React.FC = () => (
         </div>
         <div className="-mr-20">
           <ImageShadow
-            src="/assets/image/boy.png"
+            src="/assets/image/bitmap/3dIcon/boy.png"
             alt="Boy"
             width={360}
             height={360}

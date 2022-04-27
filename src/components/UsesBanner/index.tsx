@@ -17,7 +17,7 @@ const UsesBanner: React.FC = () => (
       <div className="z-20 flex">
         <div className="-mr-30">
           <ImageShadow
-            src="/assets/image/uses.png"
+            src="/assets/image/bitmap/3dIcons/uses.png"
             alt="Video Camera"
             width={480}
             height={480}

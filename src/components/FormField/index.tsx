@@ -31,6 +31,9 @@ const FormField = ({
         name={name}
         as={as}
         type={type}
+        style={{
+          resize: 'none',
+        }}
       />
       {errors && touched && <FieldError message={errors} />}
     </div>
