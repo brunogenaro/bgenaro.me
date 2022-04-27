@@ -24,7 +24,9 @@ const FormField = ({
     errors && touched && ' border-2 border-red-500'
   } ${fieldCustomClass}`
   return (
-    <div className={`flex-col ${customClass} h-full w-full `}>
+    <div
+      className={`flex-col ${customClass} h-full w-full duration-200 ease-in-out hover:scale-105`}
+    >
       <Field
         className={style}
         placeholder={name}
