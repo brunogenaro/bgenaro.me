@@ -14,7 +14,7 @@ const TalksArticle: React.FC = () => (
     <div>
       <div className="relative z-10 -mb-10 -ml-5 flex h-fit w-fit items-center justify-center rounded-xl bg-blue-500 p-4">
         <Image
-          src="/assets/image/talks.svg"
+          src="/assets/image/svg/category/talks.svg"
           alt="talk image"
           width={32}
           height={32}
@@ -25,7 +25,7 @@ const TalksArticle: React.FC = () => (
         style={{ width: '100%', height: '550px', overflow: 'hidden' }}
       >
         <Image
-          src="/assets/image/talks.jpg"
+          src="/assets/image/bitmap/defaultArticleCover/talks.jpg"
           alt="Bruno Genaro Picture"
           objectFit="cover"
           layout="responsive"

@@ -29,10 +29,10 @@ const About: React.FC = () => {
                 navigator.clipboard.writeText(text)
                 toast.success('Copied to clipboard')
               }}
-              className="flex items-center justify-center rounded-md border-2 border-transparent p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out hover:border-blue-500"
+              className="flex items-center justify-center rounded-md border-2 border-transparent p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out hover:scale-105 hover:border-blue-500"
             >
               <Image
-                src="/assets/image/copy.svg"
+                src="/assets/image/svg/action/copy.svg"
                 alt="Copy icon"
                 width={24}
                 height={24}
@@ -40,12 +40,12 @@ const About: React.FC = () => {
               <span className="ml-2 ">Copy Text</span>
             </button>
             <a
-              href="/assets/image/bruno.jpeg"
+              href="/assets/image/bitmap/bruno/bruno.jpeg"
               download="Bruno Genaro Profile Picture"
-              className="ml-5 flex items-center justify-center rounded-md border-2 border-transparent p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out hover:border-blue-500"
+              className="ml-5 flex items-center justify-center rounded-md border-2 border-transparent p-2 align-middle text-lg font-bold text-blue-500  duration-200  ease-in-out hover:scale-105 hover:border-blue-500"
             >
               <Image
-                src="/assets/image/download.svg"
+                src="/assets/image/svg/action/download.svg"
                 alt="Download icon"
                 width={24}
                 height={24}

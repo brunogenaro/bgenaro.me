@@ -15,7 +15,7 @@ const UsesCard: React.FC = () => {
       <div className="mt-5 rounded-2xl border-2 border-gray-300 bg-gray-900">
         <div className="ml-3 py-1">
           <Image
-            src="/assets/image/dots.svg"
+            src="/assets/image/svg/action/dots.svg"
             alt="Dots"
             width={42}
             height={10}

@@ -8,8 +8,8 @@ const HomeBanner: React.FC = () => {
   const interval = 3000
 
   return (
-    <section className="relative my-32 flex items-center justify-between 2xl:px-20">
-      <Link href="/about" passHref>
+    <Link href="/about" passHref>
+      <section className="relative my-32 flex items-center justify-between 2xl:px-20">
         <div className="cursor-pointer">
           <span className="ml-1 text-sm tracking-wide text-gray-300 sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
             Hello, I&#8216;m
@@ -46,10 +46,12 @@ const HomeBanner: React.FC = () => {
             <InsertionPointer className={`bg-gradient-to-br ${color}`} />
           </ColorAnimation>
         </div>
-      </Link>
-      <SpaceHolder />
-      <Avatar />
-    </section>
+        <SpaceHolder />
+        <div className="cursor-pointer">
+          <Avatar />
+        </div>
+      </section>
+    </Link>
   )
 }
 

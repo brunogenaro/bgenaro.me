@@ -17,7 +17,7 @@ export const SeeAll: React.FC<iSeeAll> = ({ title, path }: iSeeAll) => (
       </span>
       <div className="ml-4 flex items-center justify-center">
         <Image
-          src="/assets/image/seeAll.svg"
+          src="/assets/image/svg/action/seeAll.svg"
           alt="talk image"
           width={32}
           height={32}

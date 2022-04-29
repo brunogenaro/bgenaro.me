@@ -8,7 +8,7 @@ const PodcastsBanner: React.FC = () => (
       <div className="z-20 flex">
         <div className="-mx-20 flex items-center justify-between">
           <ImageShadow
-            src="/assets/image/mic.png"
+            src="/assets/image/bitmap/3dIcon/mic.png"
             alt="Microphone"
             width={280}
             height={280}
@@ -16,14 +16,14 @@ const PodcastsBanner: React.FC = () => (
         </div>
         <div className="-mr-20">
           <ImageShadow
-            src="/assets/image/headphone.png"
+            src="/assets/image/bitmap/3dIcon/headphone.png"
             alt="headphone"
             width={280}
             height={280}
           />
           <div className="-mt-10">
             <ImageShadow
-              src="/assets/image/music.png"
+              src="/assets/image/bitmap/3dIcon/music.png"
               alt="Musical Note"
               width={280}
               height={280}

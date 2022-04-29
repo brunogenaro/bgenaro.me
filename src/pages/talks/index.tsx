@@ -28,7 +28,7 @@ const Talks: React.FC = () => (
         path="https://www.meetup.com/OrlandoJS/events/264367392/"
         date="2019"
         location="OrlandoJS"
-        img="2.jpg"
+        img="cardCover/orlandojs.jpg"
       />
       <TalksCard
         title="React e comunidade salvaram minha vida"
@@ -59,7 +59,7 @@ const Talks: React.FC = () => (
         path="https://www.meetup.com/OrlandoJS/events/234319535/0"
         date="2016"
         location="OrlandoJS"
-        img="talks/UniversalReactJS2016.jfif"
+        img="cardCover/orlandojs_2.jpg"
       />
       <TalksCard
         title="Let's build React Components together"

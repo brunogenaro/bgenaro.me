@@ -24,7 +24,7 @@ const Avatar = ({ src, alt }: iAvatar) => (
 )
 
 Avatar.defaultProps = {
-  src: '/assets/image/bruno.jpeg',
+  src: '/assets/image/bitmap/bruno/bruno.jpeg',
   alt: 'Bruno Genaro Picture',
 }
 export default Avatar

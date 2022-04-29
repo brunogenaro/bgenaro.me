@@ -9,10 +9,10 @@ interface iBrand {
 }
 
 const Brand = ({ width, height, customClass }: iBrand) => (
-  <div className={customClass}>
+  <div className={`${customClass} cursor-pointer`}>
     <Link href="/" passHref>
       <Image
-        src="/assets/image/brand.svg"
+        src="/assets/image/svg/brand/brand.svg"
         alt="Bruno Genaro Brand"
         width={width}
         height={height}

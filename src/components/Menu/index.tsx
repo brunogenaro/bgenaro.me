@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import NavigationList from '../NavigationList'
+import SocialMediaIcons from '../SocialMediaIcons'
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,11 +11,11 @@ const Menu = () => {
       <button
         type="button"
         onClick={() => setIsOpen(s => !s)}
-        className="fixed top-10 right-10 z-50  flex rounded-md bg-gray-900 p-2 md:hidden"
+        className="fixed top-10 right-10 z-50 flex rounded-md bg-gray-900 p-2 md:hidden"
       >
         {isOpen ? (
           <Image
-            src="/assets/image/close.svg"
+            src="/assets/image/svg/action/close.svg"
             alt="talk image"
             objectFit="cover"
             width={32}
@@ -23,7 +24,7 @@ const Menu = () => {
           />
         ) : (
           <Image
-            src="/assets/image/menu.svg"
+            src="/assets/image/svg/action/menu.svg"
             alt="talk image"
             objectFit="cover"
             width={32}
@@ -33,14 +34,19 @@ const Menu = () => {
         )}
       </button>
 
-      <nav className="self-center">
+      <nav>
         <NavigationList listStyle="my-2 hidden md:flex" />
         {isOpen && (
-          <NavigationList
-            listStyle="fixed top-0 left-0 z-40 my-auto h-full w-full flex-col content-center items-center justify-center bg-gray-800 pt-56 text-center align-middle md:hidden"
-            itemStyle="mb-10"
-            closeMenu={() => setIsOpen(false)}
-          />
+          <div className="fixed right-0 top-0 z-40 flex h-full w-full  items-center justify-center bg-gray-800 p-10 text-center">
+            <div>
+              <NavigationList
+                listStyle="mb-20"
+                itemStyle="mb-10"
+                closeMenu={() => setIsOpen(false)}
+              />
+              <SocialMediaIcons customFolder="socialIconGray" />
+            </div>
+          </div>
         )}
       </nav>
     </>
