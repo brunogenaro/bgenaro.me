@@ -69,34 +69,34 @@ const CareerSection: React.FC = () => {
     activeItem.company.name === item.company.name
 
   return (
-    <section className="mt-10 grid grid-cols-2 gap-20 text-xl leading-8 tracking-wider text-gray-300">
-      <ul className="col-start-1 col-end-1 mt-16 justify-self-end text-right">
+    <section className="mt-10 grid grid-cols-12 text-xl leading-8 tracking-wider">
+      <ul className="col-span-2 col-start-2 mt-16 text-right">
         {Career.map(item => (
-          <li
-            key={item.company.name}
-            className={`flex rounded-l-2xl border-r-2 border-gray-300 px-5 py-1  transition delay-100 ease-in-out hover:border-blue-400 hover:bg-gray-700 hover:text-blue-400 ${
-              isActive(item) && 'border-blue-400 bg-gray-700 text-blue-400'
-            }`}
-          >
+          <li className="flex justify-end" key={item.company.name}>
             <button
               onClick={() => {
                 setActiveItem(item)
               }}
               type="button"
+              className={`cursor-pointer border-r-2 border-gray-300 px-5 py-1  ${
+                isActive(item) && 'border-blue-500 text-blue-500 '
+              }`}
             >
-              {item.company.name}
+              <span className="transition-all delay-200 ease-in-out hover:text-2xl  hover:text-blue-500">
+                {item.company.name}
+              </span>
             </button>
           </li>
         ))}
       </ul>
-      <div className="col-start-2 col-end-2">
+      <div className="col-span-6 col-start-5">
         <header>
           <h3 className="mb-5 text-3xl font-bold">Career</h3>
           <h4>
             <span className="mr-3 font-bold">{activeItem.title}</span>
             <a
               href={activeItem.company.url}
-              className="text-blue-400"
+              className="text-blue-500"
               target="_blank"
               rel="noreferrer"
             >
@@ -105,7 +105,7 @@ const CareerSection: React.FC = () => {
           </h4>
           <time className="text-base">{activeItem.date}</time>
         </header>
-        <p className="mt-5 w-2/3">{activeItem.description}</p>
+        <p className="mt-5">{activeItem.description}</p>
       </div>
     </section>
   )
