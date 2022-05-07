@@ -12,7 +12,7 @@ export const SeeAll: React.FC<iSeeAll> = ({ title, path }: iSeeAll) => (
       className=" mt-10  flex cursor-pointer items-center justify-end duration-200 ease-in-out
      hover:opacity-80"
     >
-      <span className="text-lg font-bold tracking-widest text-gray-300  lg:text-xl xl:text-2xl  2xl:text-3xl">
+      <span className="text-lg font-bold tracking-widest   lg:text-xl xl:text-2xl  2xl:text-3xl">
         see all {title.toLowerCase()}
       </span>
       <div className="ml-4 flex items-center justify-center">
