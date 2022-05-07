@@ -1,11 +1,16 @@
 import React from 'react'
-import TalksBanner from '../../components/TalksBanner'
+import Banner from '../../components/Banner'
 import TalksCard from '../../components/TalksCard'
 import TalksContainer from './styles'
 
 const Talks: React.FC = () => (
-  <TalksContainer className="px-10 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-52">
-    <TalksBanner />
+  <TalksContainer>
+    <Banner
+      title="talks"
+      subtitle="Dicas de como evoluir profissionalmente como Desenvolvedor Web"
+      backgroundColor="#3B82F6"
+      textGradient="from-cyan-500 to-blue-500"
+    />
     <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       <TalksCard
         title="Dicas de como evoluir profissionalmente como Desenvolvedor Web"

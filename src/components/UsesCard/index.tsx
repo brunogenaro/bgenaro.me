@@ -10,7 +10,7 @@ const UsesCard: React.FC = () => {
   ]
 
   return (
-    <div className="text-gray-300">
+    <div className="">
       <span className="text-4xl font-bold">desk</span>
       <div className="mt-5 rounded-2xl border-2 border-gray-300 bg-gray-900">
         <div className="ml-3 py-1">

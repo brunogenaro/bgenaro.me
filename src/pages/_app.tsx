@@ -9,7 +9,9 @@ import '../styles/globals.css'
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
     <Header />
-    <Component {...pageProps} />
+    <div className="px-10 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-52">
+      <Component {...pageProps} />
+    </div>
     <Footer />
     <GlobalStyle />
   </>

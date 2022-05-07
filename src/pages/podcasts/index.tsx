@@ -1,11 +1,16 @@
 import React from 'react'
-import PodcastsBanner from '../../components/PodcastsBanner'
+import Banner from '../../components/Banner'
 import PodcastsCard from '../../components/PodcastsCard'
 import PodcastsContainer from './styles'
 
 const Podcasts: React.FC = () => (
-  <PodcastsContainer className="px-10 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-52">
-    <PodcastsBanner />
+  <PodcastsContainer>
+    <Banner
+      title="podcasts"
+      subtitle=" Dicas de como evoluir profissionalmente como Desenvolvedor Web"
+      backgroundColor="#ae46e5"
+      textGradient="from-pink-500 to-purple-500 pb-6"
+    />
     <ul className="grid grid-cols-1 gap-10 lg:grid-cols-1 2xl:grid-cols-2">
       <PodcastsCard
         title="FrontInSampa"

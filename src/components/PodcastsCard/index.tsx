@@ -48,13 +48,13 @@ export const PodcastsCard: React.FC<iPodcastsCard> = ({
           />
         </div>
         <div className="w-2/3 p-5">
-          <h4 className="mb-3 text-ellipsis text-2xl font-bold tracking-wide text-gray-300">
+          <h4 className="mb-3 text-ellipsis text-2xl font-bold tracking-wide ">
             {title}
           </h4>
-          <p className="mb-5 text-ellipsis text-lg tracking-wide text-gray-300">
+          <p className="mb-5 text-ellipsis text-lg tracking-wide ">
             {description}
           </p>
-          <span className="text-gray-300">{date}</span>
+          <span className="">{date}</span>
         </div>
       </div>
     </a>

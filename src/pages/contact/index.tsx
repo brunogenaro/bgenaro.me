@@ -1,14 +1,23 @@
 import React from 'react'
 import Avatar from '../../components/Avatar'
+import Banner from '../../components/Banner'
 import ContactMeSection from '../../components/ContactMeSection'
 import ContactContainer from './styles'
 
 const Contact = () => (
-  <ContactContainer className="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-20">
-    <div className="relative mt-20 self-start justify-self-center md:justify-self-end">
+  <ContactContainer className="grid grid-cols-12">
+    <div className="col-span-full">
+      <Banner
+        title="contact me"
+        subtitle="hello@bgenaro.me"
+        backgroundColor="#F97316"
+        textGradient="from-orange-500 to-yellow-500"
+      />
+    </div>
+    <div className="col-start-2">
       <Avatar />
     </div>
-    <div className="mx-0 mt-20 self-start justify-self-start px-5 md:w-3/5 md:px-0">
+    <div className="col-span-5 col-start-5">
       <ContactMeSection />
     </div>
   </ContactContainer>

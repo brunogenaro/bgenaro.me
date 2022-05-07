@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { Form, Formik } from 'formik'
-import Link from 'next/link'
 import toast, { Toaster } from 'react-hot-toast'
 import FormField from '../FormField'
 import SubmitSchema from './SubmitSchema'
@@ -52,16 +51,6 @@ const ContactMeSection: React.FC = () => {
       {({ errors, touched }) => (
         <Form>
           <Toaster />
-          <div className="pb-10">
-            <Link href="/contact" passHref>
-              <h2 className="cursor-pointer text-4xl font-bold text-gray-300">
-                Contact Me
-              </h2>
-            </Link>
-            <p className="pt-4 text-xl leading-9 text-gray-300">
-              hello@bgenaro.me
-            </p>
-          </div>
           <div className="grid grid-cols-2 grid-rows-6 gap-4">
             <FormField
               name="name"

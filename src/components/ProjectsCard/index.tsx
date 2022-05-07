@@ -40,13 +40,9 @@ export const ProjectsCard: React.FC<iProjectsCard> = ({
           </div>
         </div>
         <div className="px-5 pb-8 pt-3">
-          <h4 className="mb-3 text-2xl font-bold tracking-wide text-gray-300">
-            {title}
-          </h4>
-          <p className="mb-5 text-lg tracking-wide text-gray-300">
-            {description}
-          </p>
-          <span className="text-gray-300">{date}</span>
+          <h4 className="mb-3 text-2xl font-bold tracking-wide ">{title}</h4>
+          <p className="mb-5 text-lg tracking-wide ">{description}</p>
+          <span className="">{date}</span>
         </div>
       </a>
     </Link>
