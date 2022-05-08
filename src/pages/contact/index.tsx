@@ -2,10 +2,10 @@ import React from 'react'
 import Avatar from '../../components/Avatar'
 import Banner from '../../components/Banner'
 import ContactMeSection from '../../components/ContactMeSection'
-import ContactContainer from './styles'
+import Container from '../../components/Page/styles'
 
 const Contact = () => (
-  <ContactContainer className="grid grid-cols-12">
+  <Container className="grid grid-cols-12" color="#F97316">
     <div className="col-span-full">
       <Banner
         title="contact me"
@@ -20,7 +20,7 @@ const Contact = () => (
     <div className="col-span-5 col-start-5">
       <ContactMeSection />
     </div>
-  </ContactContainer>
+  </Container>
 )
 
 export default Contact
