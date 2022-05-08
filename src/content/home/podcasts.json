@@ -1,0 +1,27 @@
+{
+  "title": "podcasts",
+  "description": "descrição do podcasts",
+  "path": "/podcasts",
+  "colorGradient": "from-purple-500 to-pink-500",
+  "color": "#8B5CF6",
+  "icon": "/assets/image/svg/category/podcasts.svg",
+  "iconBackgroundColor": "bg-purple-500",
+  "cards": [
+    {
+      "title": "podcast 1",
+      "description": "descricao do podcast 1",
+      "path": "#",
+      "date": "2020-01-01",
+      "img": "/assets/image/bitmap/1.jpg",
+      "category": "podcasts"
+    },
+    {
+      "title": "podcast 2",
+      "description": "descricao do podcast 2",
+      "path": "#",
+      "date": "2020-01-01",
+      "img": "/assets/image/bitmap/1.jpg",
+      "category": "podcasts"
+    }
+  ]
+}

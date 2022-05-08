@@ -1,0 +1,29 @@
+{
+  "color": "#3B82F6",
+  "banner": {
+    "title": "talks",
+    "subtitle": "dicas e muito mais",
+    "backgroundColor": "#3B82F6",
+    "textGradient": "from-blue-500 to-cyan-500"
+  },
+  "cards": [
+    {
+      "title": "talks 1",
+      "description": "descricao do podcast 1",
+      "path": "#",
+      "date": "2020-01-01",
+      "img": "/assets/image/bitmap/1.jpg",
+      "category": "talks",
+      "location": "São Paulo",
+      "icon": "icon-podcast",
+      "iconBackgroundColor": "bg-blue-500"
+    }
+  ],
+  "title": "podcasts",
+  "description": "descrição do podcasts",
+  "path": "/podcasts",
+  "colorGradient": "from-purple-500 to-pink-500",
+
+  "icon": "/assets/image/svg/category/podcasts.svg",
+  "iconBackgroundColor": "bg-purple-500"
+}

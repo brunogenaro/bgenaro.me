@@ -1,0 +1,27 @@
+{
+  "title": "talks",
+  "description": "descrição do talks",
+  "path": "/talks",
+  "colorGradient": "from-blue-500 to-cyan-500",
+  "color": "#3B82F6",
+  "icon": "/assets/image/svg/category/talks.svg",
+  "iconBackgroundColor": "bg-blue-500",
+  "cards": [
+    {
+      "title": "talk 1",
+      "description": "descricao do talk 1",
+      "path": "#",
+      "date": "2020-01-01",
+      "img": "/assets/image/bitmap/1.jpg",
+      "category": "talks"
+    },
+    {
+      "title": "talk 2",
+      "description": "descricao do talk 2",
+      "path": "#",
+      "date": "2020-01-01",
+      "img": "/assets/image/bitmap/1.jpg",
+      "category": "talks"
+    }
+  ]
+}
