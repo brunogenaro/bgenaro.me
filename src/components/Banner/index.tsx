@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import * as THREE from 'three'
 import RINGS from 'vanta/dist/vanta.net.min'
 
-interface iBanner {
+export interface iBanner {
   title: string
   subtitle: string
   backgroundColor: string
