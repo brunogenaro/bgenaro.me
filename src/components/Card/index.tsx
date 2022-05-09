@@ -42,7 +42,7 @@ export const Card: React.FC<iCard> = ({
           />
         </div>
         <CategoryIcon
-          backgroundColor={iconBackgroundColor || 'bg-gray-900'}
+          backgroundColor={iconBackgroundColor || 'bg-gray-500'}
           src={icon}
           alt={category || ''}
         />

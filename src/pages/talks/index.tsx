@@ -3,9 +3,23 @@ import React from 'react'
 import Page, { iPage } from '../../components/Page'
 import data from '../../content/pages/talks.json'
 
-const Talks: React.FC<iPage> = (props: iPage) => {
-  const { banner, cards, color } = props
-  return <Page banner={banner} cards={cards} color={color} />
+interface iTalks {
+  talks: iPage
+}
+
+const Talks: React.FC<iTalks> = (props: iTalks) => {
+  const { talks } = props
+  const { banner, cards, color, title, icon, iconBackgroundColor } = talks
+  return (
+    <Page
+      banner={banner}
+      cards={cards}
+      color={color}
+      title={title}
+      icon={icon}
+      iconBackgroundColor={iconBackgroundColor}
+    />
+  )
 }
 
 export const getServerSideProps: GetServerSideProps = async () => ({

@@ -7,9 +7,19 @@ export interface iPage {
   banner: iBanner
   cards: iCard[]
   color: string
+  title: string
+  icon: string
+  iconBackgroundColor: string
 }
 
-const Page: React.FC<iPage> = ({ banner, cards, color }: iPage) => (
+const Page: React.FC<iPage> = ({
+  banner,
+  cards,
+  color,
+  title,
+  icon,
+  iconBackgroundColor,
+}: iPage) => (
   <Container color={color}>
     <Banner
       title={banner?.title}
@@ -27,9 +37,9 @@ const Page: React.FC<iPage> = ({ banner, cards, color }: iPage) => (
           location={card.location}
           customStyles={card.customStyles}
           img={card.img}
-          category={card.category}
-          icon={card.icon}
-          iconBackgroundColor={card.iconBackgroundColor}
+          category={title}
+          icon={icon}
+          iconBackgroundColor={iconBackgroundColor}
         />
       ))}
     </ul>

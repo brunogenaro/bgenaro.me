@@ -2,24 +2,29 @@ import { GetServerSideProps } from 'next'
 import React from 'react'
 import Avatar from '../../components/Avatar'
 import Banner, { iBanner } from '../../components/Banner'
-import CareerSection, { iCareerSection } from '../../components/CareerSection'
+import CareerSection, {
+  iCareer,
+  iCareerSection,
+} from '../../components/CareerSection'
 import CopyTextButton from '../../components/CopyTextButton'
 import DownloadButton from '../../components/DownloadButton'
 import Container from '../../components/Page/styles'
 import data from '../../content/pages/about.json'
 
-interface iAbout {
+export interface iAbout {
   banner: iBanner
   text: string
   downloadFile: string
   fileName: string
   career: iCareerSection
+  color: string
 }
 
 const About: React.FC<iAbout> = (props: iAbout) => {
-  const { banner, text, downloadFile, fileName, career } = props
+  const about = props
+  const { banner, text, downloadFile, fileName, career, color } = about
   return (
-    <Container className="grid grid-cols-12" color="#22c55e">
+    <Container className="grid grid-cols-12" color={color}>
       <div className="col-span-full">
         <Banner
           title={banner?.title}
@@ -39,7 +44,7 @@ const About: React.FC<iAbout> = (props: iAbout) => {
         </div>
       </div>
       <div className="col-span-full">
-        <CareerSection career={career} />
+        <CareerSection career={[career as iCareer]} />
       </div>
     </Container>
   )
