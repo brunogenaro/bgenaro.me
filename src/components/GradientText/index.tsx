@@ -27,8 +27,8 @@ const GradientText: React.FC<iGradientText> = ({
 }: iGradientText) => (
   <Link href={path || ''}>
     <Gradient
-      colors={gradient || ['#ff0000', '#00ff00']}
-      className={` bg-gradient-to-br ${gradient} bg-clip-text text-transparent ${margin} ${padding} ${size} ${weight} ${letterSpacing} ${breakPoints}`}
+      colors={gradient || ['', '']}
+      className={` bg-gradient-to-br ${gradient} bg-clip-text text-transparent ${margin} ${padding} ${size} ${weight} ${letterSpacing} ${breakPoints} cursor-pointer`}
     >
       {text}
     </Gradient>
