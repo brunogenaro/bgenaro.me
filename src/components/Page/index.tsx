@@ -40,6 +40,7 @@ const Page: React.FC<iPage> = ({
           category={title}
           icon={icon}
           iconBackgroundColor={iconBackgroundColor}
+          key={card.title}
         />
       ))}
     </ul>

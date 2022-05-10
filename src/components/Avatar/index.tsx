@@ -7,13 +7,14 @@ interface iAvatar {
   alt?: string
 }
 const Avatar = ({ src, alt }: iAvatar) => (
-  <ImageContainer className="overflow-hidden rounded-2xl">
+  <ImageContainer className="overflow-hidden rounded-2xl w-full h-full">
     <Image
       src={src || ''}
       alt={alt}
-      width={350}
-      height={350}
       objectFit="cover"
+      width="100%"
+      height="100%"
+      layout="responsive"
     />
   </ImageContainer>
 )

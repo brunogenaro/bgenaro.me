@@ -11,7 +11,7 @@ const Contact = () => (
         title="contact me"
         subtitle="hello@bgenaro.me"
         backgroundColor="#F97316"
-        textGradient="from-orange-500 to-yellow-500"
+        textGradient={['#F97316', '#eab308']}
       />
     </div>
     <div className="col-start-2">

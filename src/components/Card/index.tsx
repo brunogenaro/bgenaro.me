@@ -11,7 +11,7 @@ export interface iCard {
   img?: string
   category: string
   icon: string
-  iconBackgroundColor?: string
+  iconBackgroundColor: string
 }
 
 export const Card: React.FC<iCard> = ({
@@ -42,7 +42,7 @@ export const Card: React.FC<iCard> = ({
           />
         </div>
         <CategoryIcon
-          backgroundColor={iconBackgroundColor || 'bg-gray-500'}
+          backgroundColor={iconBackgroundColor}
           src={icon}
           alt={category || ''}
         />

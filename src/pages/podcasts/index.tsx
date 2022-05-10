@@ -21,6 +21,7 @@ const Podcasts: React.FC<iPodcasts> = (props: iPodcasts) => {
     />
   )
 }
+
 export const getServerSideProps: GetServerSideProps = async () => ({
   props: {
     podcasts: data,

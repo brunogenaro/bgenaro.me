@@ -1,13 +1,13 @@
 {
   "title": "podcasts",
   "icon": "/assets/image/svg/category/podcasts.svg",
-  "iconBackgroundColor": "bg-purple-500",
+  "iconBackgroundColor": "#8B5CF6",
   "color": "#8B5CF6",
   "banner": {
     "title": "podcasts",
     "subtitle": "dicas e muito mais",
     "backgroundColor": "#8B5CF6",
-    "textGradient": "from-pink-500 to-purple-500 pb-6"
+    "textGradient": ["#8B5CF6", "#EC4899"]
   },
   "cards": [
     {
@@ -18,8 +18,7 @@
       "img": "/assets/image/bitmap/1.jpg",
       "category": "podcasts",
       "location": "São Paulo",
-      "icon": "icon-podcast",
-      "iconBackgroundColor": "bg-purple-500"
+      "icon": "icon-podcast"
     },
     {
       "title": "talks 1",
@@ -29,8 +28,7 @@
       "img": "/assets/image/bitmap/1.jpg",
       "category": "podcasts",
       "location": "São Paulo",
-      "icon": "icon-podcast",
-      "iconBackgroundColor": "bg-purple-500"
+      "icon": "icon-podcast"
     },
     {
       "title": "talks 1",
@@ -40,8 +38,7 @@
       "img": "/assets/image/bitmap/1.jpg",
       "category": "podcasts",
       "location": "São Paulo",
-      "icon": "icon-podcast",
-      "iconBackgroundColor": "bg-purple-500"
+      "icon": "icon-podcast"
     },
     {
       "title": "talks 1",
@@ -51,8 +48,7 @@
       "img": "/assets/image/bitmap/1.jpg",
       "category": "podcasts",
       "location": "São Paulo",
-      "icon": "icon-podcast",
-      "iconBackgroundColor": "bg-purple-500"
+      "icon": "icon-podcast"
     }
   ]
 }

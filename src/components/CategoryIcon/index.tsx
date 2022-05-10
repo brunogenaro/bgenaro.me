@@ -9,7 +9,8 @@ interface iCategoryIcon {
 
 const CategoryIcon = ({ src, alt, backgroundColor }: iCategoryIcon) => (
   <div
-    className={`relative -mt-10 -ml-5 flex h-fit w-fit items-center justify-center rounded-xl ${backgroundColor} p-4`}
+    className="relative -mt-10 -ml-5 flex h-fit w-fit items-center justify-center rounded-xl p-4"
+    style={{ background: backgroundColor }}
   >
     <Image src={src} alt={alt} width={32} height={32} />
   </div>

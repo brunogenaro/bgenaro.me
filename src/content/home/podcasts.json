@@ -2,10 +2,10 @@
   "title": "podcasts",
   "description": "descrição do podcasts",
   "path": "/podcasts",
-  "colorGradient": "from-purple-500 to-pink-500",
+  "colorGradient": ["#8B5CF6", "#EC4899"],
   "color": "#8B5CF6",
   "icon": "/assets/image/svg/category/podcasts.svg",
-  "iconBackgroundColor": "bg-purple-500",
+  "iconBackgroundColor": "#8B5CF6",
   "cards": [
     {
       "title": "podcast 1",
