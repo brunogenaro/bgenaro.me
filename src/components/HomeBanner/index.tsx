@@ -87,8 +87,6 @@ const HomeBanner: React.FC = () => {
     typing()
     antMetronome()
     setWord(words[index].substring(0, currentCharacter))
-
-    console.log(typingInterval)
   }, [switcher])
 
   useEffect(() => {
