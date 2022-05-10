@@ -34,10 +34,10 @@ const Contact: React.FC<iContact> = (props: iContact) => {
           textGradient={gradient}
         />
       </div>
-      <div className="col-end-4 col-span-4">
+      <div className="hidden xl:block xl:col-end-5 xl:col-span-3">
         <Avatar />
       </div>
-      <div className="col-span-5 col-start-5">
+      <div className="col-start-1 col-span-12 sm:col-start-2 sm:col-span-10 md:col-span-8 md:col-start-3 xl:col-span-5 xl:col-start-6">
         <h3 className="mb-5 text-3xl font-bold">Let&#39;s talk</h3>
         <p className="mb-10 text-xl">{text}</p>
         <ContactMeSection />

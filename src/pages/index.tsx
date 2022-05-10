@@ -56,7 +56,7 @@ const Home: NextPage<iHome> = (props: iHome) => {
         iconBackgroundColor={podcasts.style.color}
       />
       <div className="grid grid-cols-12">
-        <div className="grid col-start-4 col-span-6">
+        <div className="col-start-1 col-span-12 sm:col-start-2 sm:col-span-10 md:col-start-3 md:col-span-8 xl:col-start-4 xl:col-span-6">
           <GradientText
             text="contact me"
             gradient={contact.style.gradient}

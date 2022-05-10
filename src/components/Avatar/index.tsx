@@ -6,7 +6,7 @@ interface iAvatar {
   alt?: string
 }
 const Avatar = ({ src, alt }: iAvatar) => (
-  <div className="overflow-hidden rounded-full shadow-2xl shadow-gray-600 ">
+  <div className="overflow-hidden rounded-full">
     <Image
       src={src || ''}
       alt={alt}

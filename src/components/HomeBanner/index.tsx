@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import Avatar from '../Avatar'
-import { SpaceHolder } from './styles'
 
 const HomeBanner: React.FC = () => (
-  <Link href="/about" passHref>
-    <section className="my-10 flex items-center justify-between overflow-hidden rounded-3xl p-20">
-      <Avatar />
-      <SpaceHolder />
-      <div className="cursor-pointer">
+  <section className="my-10 grid grid-cols-12 content-center items-center gap-10">
+    <Link href="/about" passHref>
+      <div className="col-end-6 col-span-3 cursor-pointer">
+        <Avatar />
+      </div>
+    </Link>
+    <Link href="/about" passHref>
+      <div className=" col-start-6 col-span-6 cursor-pointer">
         <span className=" text-sm tracking-wide  sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
           Hello, I&#8216;m
         </span>
@@ -15,8 +17,8 @@ const HomeBanner: React.FC = () => (
           Bruno Genaro
         </h1>
       </div>
-    </section>
-  </Link>
+    </Link>
+  </section>
 )
 
 export default HomeBanner

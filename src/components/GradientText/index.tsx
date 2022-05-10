@@ -40,10 +40,10 @@ GradientText.defaultProps = {
   margin: 'ml-5 mb-10',
   padding: 'pb-3',
   gradient: ['#f8b195', '#f67280'],
-  size: 'text-2xl',
+  size: 'text-4xl',
   weight: 'font-bold',
   letterSpacing: 'tracking-wide',
-  breakPoints: 'sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl',
+  breakPoints: 'sm:text-5xl xl:text-6xl',
   text: 'No text',
 }
 

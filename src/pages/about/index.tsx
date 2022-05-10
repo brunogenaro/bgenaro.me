@@ -40,10 +40,10 @@ const About: React.FC<iAbout> = (props: iAbout) => {
           textGradient={gradient}
         />
       </div>
-      <div className="col-end-4 col-span-4 ">
+      <div className=" col-span-8 col-start-3 lg:col-end-5 lg:col-span-3">
         <Avatar />
       </div>
-      <div className="col-span-6 col-start-5">
+      <div className="col-span-12 col-start-1 md:col-span-10 md:col-start-2 lg:col-span-6 lg:col-start-6">
         <h3 className="mb-5 text-3xl font-bold">Bio</h3>
         <p className="text-xl leading-8 tracking-wider">{text}</p>
         <div className="my-10 flex">

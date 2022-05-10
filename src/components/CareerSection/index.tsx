@@ -24,7 +24,7 @@ const CareerSection: React.FC<iCareerSection> = ({
 
   return (
     <section className="mt-10 grid grid-cols-12 text-xl leading-8 tracking-wider">
-      <ul className="col-span-2 col-start-2 mt-16 text-right">
+      <ul className=" col-start-1 col-span-2 lg:col-span-2 lg:col-start-3 mt-16 text-right">
         {career.map(item => (
           <li className="flex justify-end" key={item.company.name}>
             <button
@@ -43,7 +43,7 @@ const CareerSection: React.FC<iCareerSection> = ({
           </li>
         ))}
       </ul>
-      <div className="col-span-6 col-start-5">
+      <div className="col-span-9 col-start-4 lg:col-span-6 lg:col-start-6">
         <header>
           <h3 className="mb-5 text-3xl font-bold">Career</h3>
           <h4>
