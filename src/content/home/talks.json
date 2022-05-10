@@ -2,10 +2,6 @@
   "title": "talks",
   "description": "descrição do talks",
   "path": "/talks",
-  "colorGradient": ["#3B82F6", "#06b6d4"],
-  "color": "#3B82F6",
-  "icon": "/assets/image/svg/category/talks.svg",
-  "iconBackgroundColor": "#3B82F6",
   "cards": [
     {
       "title": "talk 1",

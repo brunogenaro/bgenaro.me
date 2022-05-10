@@ -1,14 +1,7 @@
 {
   "title": "podcasts",
-  "icon": "/assets/image/svg/category/podcasts.svg",
-  "iconBackgroundColor": "#8B5CF6",
-  "color": "#8B5CF6",
-  "banner": {
-    "title": "podcasts",
-    "subtitle": "dicas e muito mais",
-    "backgroundColor": "#8B5CF6",
-    "textGradient": ["#8B5CF6", "#EC4899"]
-  },
+  "subtitle": "dicas e muito mais",
+  "path": "/podcasts",
   "cards": [
     {
       "title": "talks 1",

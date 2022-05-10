@@ -1,36 +1,43 @@
 import { GetServerSideProps } from 'next'
 import React from 'react'
+import { iContentPageStyle } from '..'
 import Avatar from '../../components/Avatar'
-import Banner, { iBanner } from '../../components/Banner'
+import Banner from '../../components/Banner'
 import CareerSection, { iCareerSection } from '../../components/CareerSection'
 import CopyTextButton from '../../components/CopyTextButton'
 import DownloadButton from '../../components/DownloadButton'
 import Container from '../../components/Page/styles'
-import data from '../../content/pages/about.json'
+import dataJson from '../../content/pages/about.json'
+import styleJson from '../../content/styles/about.json'
 
 export interface iAbout {
   about: {
-    banner: iBanner
-    text: string
-    downloadFile: string
-    fileName: string
-    career: iCareerSection
-    color: string
+    data: {
+      title: string
+      subtitle: string
+      text: string
+      downloadFile: string
+      fileName: string
+      career: iCareerSection
+    }
+    style: iContentPageStyle
   }
 }
 
 const About: React.FC<iAbout> = (props: iAbout) => {
   const { about } = props
-  const { banner, text, downloadFile, fileName, career, color } = about
+  const { data, style } = about
+  const { title, subtitle, text, downloadFile, fileName, career } = data
+  const { gradient, color } = style
 
   return (
     <Container className="grid grid-cols-12" color={color}>
       <div className="col-span-full">
         <Banner
-          title={banner?.title}
-          subtitle={banner?.subtitle}
-          backgroundColor={banner?.backgroundColor}
-          textGradient={banner?.textGradient}
+          title={title}
+          subtitle={subtitle}
+          backgroundColor={color}
+          textGradient={gradient}
         />
       </div>
       <div className="col-start-2">
@@ -52,7 +59,7 @@ const About: React.FC<iAbout> = (props: iAbout) => {
 
 export const getServerSideProps: GetServerSideProps = async () => ({
   props: {
-    about: data,
+    about: { data: dataJson, style: styleJson },
   },
 })
 export default About

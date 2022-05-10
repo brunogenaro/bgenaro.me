@@ -1,31 +1,31 @@
 import React from 'react'
-import Banner, { iBanner } from '../Banner'
+import Banner from '../Banner'
 import Card, { iCard } from '../Card'
 import Container from './styles'
 
 export interface iPage {
-  banner: iBanner
   cards: iCard[]
   color: string
+  gradient: string[]
   title: string
+  subtitle: string
   icon: string
-  iconBackgroundColor: string
 }
 
 const Page: React.FC<iPage> = ({
-  banner,
   cards,
   color,
+  gradient,
   title,
+  subtitle,
   icon,
-  iconBackgroundColor,
 }: iPage) => (
   <Container color={color}>
     <Banner
-      title={banner?.title}
-      subtitle={banner?.subtitle}
-      backgroundColor={banner?.backgroundColor}
-      textGradient={banner?.textGradient}
+      title={title}
+      subtitle={subtitle}
+      backgroundColor={color}
+      textGradient={gradient}
     />
     <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       {cards?.map((card: iCard) => (
@@ -39,7 +39,7 @@ const Page: React.FC<iPage> = ({
           img={card.img}
           category={title}
           icon={icon}
-          iconBackgroundColor={iconBackgroundColor}
+          iconBackgroundColor={color}
           key={card.title}
         />
       ))}

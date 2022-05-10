@@ -1,30 +1,37 @@
 import { GetServerSideProps } from 'next'
 import React from 'react'
+import { iContentPageStyle } from '..'
 import Page, { iPage } from '../../components/Page'
-import data from '../../content/pages/podcasts.json'
+import dataJson from '../../content/pages/podcasts.json'
+import styleJson from '../../content/styles/podcasts.json'
 
 export interface iPodcasts {
-  podcasts: iPage
+  podcasts: {
+    data: iPage
+    style: iContentPageStyle
+  }
 }
 
 const Podcasts: React.FC<iPodcasts> = (props: iPodcasts) => {
   const { podcasts } = props
-  const { banner, cards, color, title, icon, iconBackgroundColor } = podcasts
+  const { data, style } = podcasts
+  const { cards, title, subtitle } = data
+  const { color, icon, gradient } = style
   return (
     <Page
-      banner={banner}
       cards={cards}
       color={color}
       title={title}
-      icon={icon}
-      iconBackgroundColor={iconBackgroundColor}
+      icon={icon || ''}
+      gradient={gradient}
+      subtitle={subtitle}
     />
   )
 }
 
 export const getServerSideProps: GetServerSideProps = async () => ({
   props: {
-    podcasts: data,
+    podcasts: { data: dataJson, style: styleJson },
   },
 })
 

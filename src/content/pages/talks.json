@@ -1,14 +1,8 @@
 {
   "title": "talks",
-  "icon": "/assets/image/svg/category/talks.svg",
-  "iconBackgroundColor": "#3B82F6",
-  "color": "#3B82F6",
-  "banner": {
-    "title": "talks",
-    "subtitle": "dicas e muito mais",
-    "backgroundColor": "#3B82F6",
-    "textGradient": ["#3B82F6", "#06b6d4"]
-  },
+  "subtitle": "dicas e muito mais",
+  "path": "/talks",
+
   "cards": [
     {
       "title": "talks 1",
