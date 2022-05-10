@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { Textfit } from 'react-textfit'
 import Avatar from '../Avatar'
 import Gradient from '../GradientText/styles'
 
@@ -97,23 +98,21 @@ const HomeBanner: React.FC = () => {
   return (
     <section className="my-10 grid grid-cols-12 content-center items-center gap-10">
       <Link href="/about" passHref>
-        <div className="col-end-6 col-span-3 cursor-pointer">
+        <div className="col-span-9 col-start-3 md:col-end-6 md:col-span-3 cursor-pointer">
           <Avatar />
         </div>
       </Link>
       <Link href="/about" passHref>
-        <div className=" col-start-6 col-span-6 cursor-pointer">
-          <span className=" text-sm tracking-wide  sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-            Hello, I&#8216;m
-          </span>
-          <h1 className="-ml-2 text-3xl font-bold tracking-wide sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-            Bruno Genaro
+        <div className=" col-span-11 col-start-1 md:col-start-6 md:col-span-6 cursor-pointer">
+          <span className="text-2xl lg:text-3xl">Hello, I&#8216;m</span>
+          <h1 className="font-bold tracking-wide ">
+            <Textfit mode="single">Bruno Genaro</Textfit>
           </h1>
           <Gradient
-            className=" text-sm tracking-wide font-bold sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"
+            className="tracking-wide font-bold text-3xl"
             colors={colors[colorIndex]}
           >
-            {word}|
+            <Textfit mode="multi"> {word}|</Textfit>
           </Gradient>
         </div>
       </Link>
