@@ -20,7 +20,7 @@ const Section: React.FC<iSection> = ({
   iconBackgroundColor,
 }: iSection) => (
   <section className="my-10">
-    <GradientText text={title} path={path} gradient={colorGradient} />
+    <GradientText children={title} path={path} gradient={colorGradient} />
     <ul className="grid grid-cols-1 gap-10  2xl:grid-cols-2">
       {cards.map((card: iCard) => (
         <Card

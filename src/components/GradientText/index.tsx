@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Gradient from './styles'
 
 interface iGradientText {
@@ -7,7 +7,7 @@ interface iGradientText {
   margin?: string
   padding?: string
   gradient?: string[]
-  text?: string
+  children: ReactNode
   size?: string
   weight?: string
   letterSpacing?: string
@@ -23,28 +23,27 @@ const GradientText: React.FC<iGradientText> = ({
   weight,
   letterSpacing,
   breakPoints,
-  text,
+  children,
 }: iGradientText) => (
   <Link href={path || ''}>
     <Gradient
       colors={gradient || ['', '']}
       className={` bg-gradient-to-br ${gradient} bg-clip-text text-transparent ${margin} ${padding} ${size} ${weight} ${letterSpacing} ${breakPoints} cursor-pointer`}
     >
-      {text}
+      {children}
     </Gradient>
   </Link>
 )
 
 GradientText.defaultProps = {
   path: '/',
-  margin: 'ml-5 mb-10',
+  margin: 'ml-5 mb-5',
   padding: 'pb-3',
-  gradient: ['#f8b195', '#f67280'],
-  size: 'text-4xl',
+  gradient: ['#3B82F6', '#06b6d4'],
+  size: 'text-5xl',
   weight: 'font-bold',
   letterSpacing: 'tracking-wide',
-  breakPoints: 'sm:text-5xl xl:text-6xl',
-  text: 'No text',
+  breakPoints: 'sm:text-6xl sm:mb-10',
 }
 
 export default GradientText

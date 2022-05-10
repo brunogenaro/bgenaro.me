@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { Textfit } from 'react-textfit'
 import * as THREE from 'three'
 import RINGS from 'vanta/dist/vanta.net.min'
 import GradientText from '../GradientText'
@@ -57,10 +58,11 @@ const Banner: React.FC<iBanner> = ({
           gradient={textGradient}
           size="text-7xl"
           breakPoints="md:text-8xl xl:text-9xl"
-          text={title}
-        />
+        >
+          <Textfit mode="single">{title}</Textfit>
+        </GradientText>
         <p className="pl-10 text-lg leading-6  lg:leading-7 xl:text-xl  xl:leading-8 2xl:text-3xl">
-          {subtitle}
+          <Textfit mode="multi">{subtitle}</Textfit>
         </p>
       </div>
     </div>
