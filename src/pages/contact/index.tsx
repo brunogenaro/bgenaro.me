@@ -13,6 +13,7 @@ export interface iContact {
     data: {
       title: string
       subtitle: string
+      text: string
     }
     style: iContentPageStyle
   }
@@ -21,7 +22,7 @@ export interface iContact {
 const Contact: React.FC<iContact> = (props: iContact) => {
   const { contact } = props
   const { data, style } = contact
-  const { title, subtitle } = data
+  const { title, subtitle, text } = data
   const { color, gradient } = style
   return (
     <Container className="grid grid-cols-12" color={color}>
@@ -33,10 +34,12 @@ const Contact: React.FC<iContact> = (props: iContact) => {
           textGradient={gradient}
         />
       </div>
-      <div className="col-start-2">
+      <div className="col-end-4 col-span-4">
         <Avatar />
       </div>
       <div className="col-span-5 col-start-5">
+        <h3 className="mb-5 text-3xl font-bold">Let&#39;s talk</h3>
+        <p className="mb-10 text-xl">{text}</p>
         <ContactMeSection />
       </div>
     </Container>

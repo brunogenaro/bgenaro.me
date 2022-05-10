@@ -1,9 +1,12 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import ContactMeSection from '../components/ContactMeSection'
+import GradientText from '../components/GradientText'
 import HomeBanner from '../components/HomeBanner'
 import Section, { iSection } from '../components/Section'
+import contactDataJson from '../content/home/contact.json'
 import podcastsDataJson from '../content/home/podcasts.json'
 import talksDataJson from '../content/home/talks.json'
+import contactStyleJson from '../content/styles/contact.json'
 import podcastsStyleJson from '../content/styles/podcasts.json'
 import talksStyleJson from '../content/styles/talks.json'
 
@@ -16,6 +19,13 @@ export interface iHome {
     data: iSection
     style: iContentPageStyle
   }
+  contact: {
+    data: {
+      title: string
+      subtitle: string
+    }
+    style: iContentPageStyle
+  }
 }
 
 export interface iContentPageStyle {
@@ -25,7 +35,7 @@ export interface iContentPageStyle {
 }
 
 const Home: NextPage<iHome> = (props: iHome) => {
-  const { talks, podcasts } = props
+  const { talks, podcasts, contact } = props
   return (
     <div>
       <HomeBanner />
@@ -45,7 +55,17 @@ const Home: NextPage<iHome> = (props: iHome) => {
         icon={podcasts.style.icon || ''}
         iconBackgroundColor={podcasts.style.color}
       />
-      <ContactMeSection />
+      <div className="grid grid-cols-12">
+        <div className="grid col-start-4 col-span-6">
+          <GradientText
+            text="contact me"
+            gradient={contact.style.gradient}
+            margin="mb-5"
+          />
+          <p className="mb-10 text-xl">{contact.data.subtitle}</p>
+          <ContactMeSection />
+        </div>
+      </div>
     </div>
   )
 }
@@ -53,6 +73,7 @@ export const getServerSideProps: GetServerSideProps = async () => ({
   props: {
     talks: { data: talksDataJson, style: talksStyleJson },
     podcasts: { data: podcastsDataJson, style: podcastsStyleJson },
+    contact: { data: contactDataJson, style: contactStyleJson },
   },
 })
 

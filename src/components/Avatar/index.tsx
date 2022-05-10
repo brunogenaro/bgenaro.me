@@ -1,13 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
-import ImageContainer from './styles'
 
 interface iAvatar {
   src?: string
   alt?: string
 }
 const Avatar = ({ src, alt }: iAvatar) => (
-  <ImageContainer className="overflow-hidden rounded-2xl w-full h-full">
+  <div className="overflow-hidden rounded-full shadow-2xl shadow-gray-600 ">
     <Image
       src={src || ''}
       alt={alt}
@@ -16,7 +15,7 @@ const Avatar = ({ src, alt }: iAvatar) => (
       height="100%"
       layout="responsive"
     />
-  </ImageContainer>
+  </div>
 )
 
 Avatar.defaultProps = {

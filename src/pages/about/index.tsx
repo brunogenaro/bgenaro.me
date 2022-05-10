@@ -40,10 +40,11 @@ const About: React.FC<iAbout> = (props: iAbout) => {
           textGradient={gradient}
         />
       </div>
-      <div className="col-start-2">
+      <div className="col-end-4 col-span-4 ">
         <Avatar />
       </div>
       <div className="col-span-6 col-start-5">
+        <h3 className="mb-5 text-3xl font-bold">Bio</h3>
         <p className="text-xl leading-8 tracking-wider">{text}</p>
         <div className="my-10 flex">
           <CopyTextButton text={text} />
