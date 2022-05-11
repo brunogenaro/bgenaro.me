@@ -1,11 +1,23 @@
 import React from 'react'
+import navigationListItemsJson from '../../content/components/navigationListItems.json'
 import ListItemLink from '../ListItemLink'
 
-interface iNavigationList {
+export interface iNavigationListItems {
+  list: [
+    {
+      label: string
+      redirectTo: string
+      customStyle: string
+      activeStyle: string
+    },
+  ]
+}
+export interface iNavigationList {
   listStyle?: string
   itemStyle?: string
   textColor?: string
   closeMenu?: () => void
+  // navigationListItems?: iNavigationListItems
 }
 
 const NavigationList: React.FC<iNavigationList> = ({
@@ -15,47 +27,16 @@ const NavigationList: React.FC<iNavigationList> = ({
   closeMenu,
 }: iNavigationList) => (
   <ul className={listStyle}>
-    <ListItemLink
-      label="home"
-      redirectTo="/"
-      itemStyle={itemStyle}
-      customStyle={`${textColor} hover:text-orange-500 md:hidden`}
-      clickHandler={closeMenu}
-      activeStyle="text-orange-500"
-    />
-
-    <ListItemLink
-      label="about"
-      redirectTo="/about"
-      itemStyle={itemStyle}
-      customStyle={`${textColor} hover:text-green-500`}
-      clickHandler={closeMenu}
-      activeStyle="text-green-500"
-    />
-    <ListItemLink
-      label="talks"
-      redirectTo="/talks"
-      itemStyle={itemStyle}
-      customStyle={`${textColor} hover:text-blue-500`}
-      clickHandler={closeMenu}
-      activeStyle="text-blue-500"
-    />
-    <ListItemLink
-      label="podcasts"
-      redirectTo="/podcasts"
-      itemStyle={itemStyle}
-      customStyle={`${textColor} hover:text-purple-500`}
-      clickHandler={closeMenu}
-      activeStyle="text-purple-500"
-    />
-    <ListItemLink
-      label="contact me"
-      redirectTo="/contact"
-      itemStyle={itemStyle}
-      customStyle={`${textColor} hover:text-yellow-500`}
-      clickHandler={closeMenu}
-      activeStyle="text-yellow-500"
-    />
+    {navigationListItemsJson?.list?.map(item => (
+      <ListItemLink
+        label={item.label}
+        redirectTo={item.redirectTo}
+        itemStyle={itemStyle}
+        customStyle={`${textColor} ${item.customStyle}`}
+        clickHandler={closeMenu}
+        activeStyle={item.activeStyle}
+      />
+    ))}
   </ul>
 )
 
