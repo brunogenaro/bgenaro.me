@@ -1,6 +1,6 @@
 import { GetServerSideProps } from 'next'
 import React from 'react'
-import socialMediaIconsJson from '../../content/socialMediaIcons.json'
+import socialMediaIconsJson from '../../content/components/socialMediaIcons.json'
 import IconLink from '../IconLink'
 
 interface iSocialIcons {
