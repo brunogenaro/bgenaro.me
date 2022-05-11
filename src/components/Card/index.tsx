@@ -27,7 +27,7 @@ export const Card: React.FC<iCard> = ({
   iconBackgroundColor,
 }: iCard) => (
   <li
-    className={`rounded-3xl bg-gray-800 ${customStyles}  duration-200 ease-in-out hover:scale-105 `}
+    className={`rounded-3xl bg-gray-800 ${customStyles}  duration-200 ease-in-out scale-101 `}
   >
     <a href={path} target="_blank" rel="noreferrer">
       <div>

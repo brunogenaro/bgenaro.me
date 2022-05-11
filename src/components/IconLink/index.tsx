@@ -14,7 +14,7 @@ const IconLink: React.FC<iIconLink> = ({
   redirectTo,
   size,
 }: iIconLink) => (
-  <div className="mx-2 duration-200 ease-in-out hover:scale-105">
+  <div className="mx-2 duration-200 ease-in-out scale-101">
     <Link href={redirectTo}>
       <a href={redirectTo} target="_blank" rel="noreferrer">
         <Image

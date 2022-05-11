@@ -19,7 +19,7 @@ const CopyTextButton: React.FC<iCopyTextButton> = ({
         navigator.clipboard.writeText(text)
         toast.success('Copied to clipboard')
       }}
-      className="flex items-center justify-center rounded-md border-2 border-transparent p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out hover:scale-105 hover:border-blue-500"
+      className="flex items-center justify-center rounded-md border-2 border-transparent p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out scale-101 hover:border-blue-500"
     >
       <Image
         src="/assets/image/svg/action/copy.svg"

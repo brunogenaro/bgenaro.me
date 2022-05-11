@@ -25,7 +25,7 @@ const FormField = ({
   } ${fieldCustomClass}`
   return (
     <div
-      className={`flex-col ${customClass} h-full w-full duration-200 ease-in-out hover:scale-105`}
+      className={`flex-col ${customClass} h-full w-full duration-200 ease-in-out scale-101`}
     >
       <Field
         className={style}

@@ -89,7 +89,7 @@ const ContactMeSection: React.FC = () => {
                 Object.keys(errors).length > 0 ||
                 Object.keys(touched).length < 3
                   ? `mt-10 box-content cursor-not-allowed rounded-xl border-2  border-blue-900 p-3 text-xl  font-bold text-blue-900 `
-                  : `mt-10 box-content rounded-xl border-2 border-blue-500  p-3 text-xl font-bold  text-blue-500 duration-200 ease-in-out hover:scale-105`
+                  : `mt-10 box-content rounded-xl border-2 border-blue-500  p-3 text-xl font-bold  text-blue-500 duration-200 ease-in-out scale-101`
               }
               type="submit"
             >

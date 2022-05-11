@@ -57,7 +57,7 @@ const CareerSection: React.FC<iCareerSection> = ({
               setShowItem(!showItem)
             }}
             type="button"
-            className="flex rounded-md tracking-wider p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out hover:scale-105 whitespace-nowrap"
+            className="flex rounded-md tracking-wider p-2 align-middle text-lg font-bold text-blue-500 duration-200 ease-in-out scale-101 whitespace-nowrap"
           >
             {activeItem.company.name}
             <div className="ml-3 flex self-center">
