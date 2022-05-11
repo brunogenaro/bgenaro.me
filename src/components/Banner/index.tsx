@@ -50,7 +50,7 @@ const Banner: React.FC<iBanner> = ({
   return (
     <div
       ref={vantaRef}
-      className="mb-10 grid h-52 grid-cols-12 grid-rows-6 overflow-hidden rounded-2xl p-10  sm:h-60 md:h-60 lg:h-80 xl:h-80 2xl:h-80"
+      className="mb-10 grid h-52 grid-cols-12 grid-rows-6 overflow-hidden rounded-2xl p-10  pt-0 "
     >
       <div className="col-span-full col-start-2 row-start-2">
         <GradientText

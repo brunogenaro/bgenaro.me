@@ -1,9 +1,10 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import ContactMeSection from '../components/ContactMeSection'
 import GradientText from '../components/GradientText'
-import HomeBanner from '../components/HomeBanner'
+import HomeBanner, { iHomeBanner } from '../components/HomeBanner'
 import Section, { iSection } from '../components/Section'
 import contactDataJson from '../content/home/contact.json'
+import homeDataJson from '../content/home/home.json'
 import podcastsDataJson from '../content/home/podcasts.json'
 import talksDataJson from '../content/home/talks.json'
 import contactStyleJson from '../content/styles/contact.json'
@@ -11,6 +12,10 @@ import podcastsStyleJson from '../content/styles/podcasts.json'
 import talksStyleJson from '../content/styles/talks.json'
 
 export interface iHome {
+  home: {
+    data: iHomeBanner
+  }
+
   talks: {
     data: iSection
     style: iContentPageStyle
@@ -35,10 +40,15 @@ export interface iContentPageStyle {
 }
 
 const Home: NextPage<iHome> = (props: iHome) => {
-  const { talks, podcasts, contact } = props
+  const { home, talks, podcasts, contact } = props
   return (
     <div>
-      <HomeBanner />
+      <HomeBanner
+        headTitle={home.data.headTitle}
+        title={home.data.title}
+        words={home.data.words}
+        colors={home.data.colors}
+      />
       <Section
         title={talks.data.title}
         path={talks.data.path}
@@ -46,6 +56,7 @@ const Home: NextPage<iHome> = (props: iHome) => {
         colorGradient={talks.style.gradient}
         icon={talks.style.icon || ''}
         iconBackgroundColor={talks.style.color}
+        gridTemplateColumns={talks.data.gridTemplateColumns}
       />
       <Section
         title={podcasts.data.title}
@@ -54,14 +65,13 @@ const Home: NextPage<iHome> = (props: iHome) => {
         colorGradient={podcasts.style.gradient}
         icon={podcasts.style.icon || ''}
         iconBackgroundColor={podcasts.style.color}
+        gridTemplateColumns={podcasts.data.gridTemplateColumns}
       />
       <div className="grid grid-cols-12">
         <div className="col-start-1 col-span-12 sm:col-start-2 sm:col-span-10 md:col-start-3 md:col-span-8 xl:col-start-4 xl:col-span-6">
-          <GradientText
-            children="contact me"
-            gradient={contact.style.gradient}
-            margin="mb-5"
-          />
+          <GradientText gradient={contact.style.gradient} margin="mb-5">
+            contact me
+          </GradientText>
           <p className="mb-10 text-xl">{contact.data.subtitle}</p>
           <ContactMeSection />
         </div>
@@ -71,6 +81,7 @@ const Home: NextPage<iHome> = (props: iHome) => {
 }
 export const getServerSideProps: GetServerSideProps = async () => ({
   props: {
+    home: { data: homeDataJson },
     talks: { data: talksDataJson, style: talksStyleJson },
     podcasts: { data: podcastsDataJson, style: podcastsStyleJson },
     contact: { data: contactDataJson, style: contactStyleJson },

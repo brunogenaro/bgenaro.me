@@ -9,6 +9,7 @@ export interface iSection {
   colorGradient: string[]
   icon: string
   iconBackgroundColor: string
+  gridTemplateColumns: string
 }
 
 const Section: React.FC<iSection> = ({
@@ -18,10 +19,13 @@ const Section: React.FC<iSection> = ({
   colorGradient,
   icon,
   iconBackgroundColor,
+  gridTemplateColumns,
 }: iSection) => (
   <section className="my-10">
-    <GradientText children={title} path={path} gradient={colorGradient} />
-    <ul className="grid grid-cols-1 gap-10  2xl:grid-cols-2">
+    <GradientText path={path} gradient={colorGradient}>
+      {title}
+    </GradientText>
+    <ul className={gridTemplateColumns}>
       {cards.map((card: iCard) => (
         <Card
           title={card.title}

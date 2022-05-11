@@ -2,6 +2,7 @@
   "title": "talks",
   "description": "descrição do talks",
   "path": "/talks",
+  "gridTemplateColumns": "grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4",
   "cards": [
     {
       "title": "talk 1",
@@ -13,6 +14,22 @@
     },
     {
       "title": "talk 2",
+      "description": "descricao do talk 2",
+      "path": "#",
+      "date": "2020-01-01",
+      "img": "/assets/image/bitmap/1.jpg",
+      "category": "talks"
+    },
+    {
+      "title": "talk 3",
+      "description": "descricao do talk 2",
+      "path": "#",
+      "date": "2020-01-01",
+      "img": "/assets/image/bitmap/1.jpg",
+      "category": "talks"
+    },
+    {
+      "title": "talk 4",
       "description": "descricao do talk 2",
       "path": "#",
       "date": "2020-01-01",

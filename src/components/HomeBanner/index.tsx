@@ -4,24 +4,19 @@ import { Textfit } from 'react-textfit'
 import Avatar from '../Avatar'
 import Gradient from '../GradientText/styles'
 
-const HomeBanner: React.FC = () => {
-  const words = [
-    'Senior Software Engineer',
-    'JavaScript Consultant',
-    'CEO at WebSolutionsFL',
-    'Speaker',
-    'Event Producer',
-    'OrlandoJS Meetup Co-Organizer',
-    'Father to two beautiful daughters',
-  ]
+export interface iHomeBanner {
+  headTitle: string
+  title: string
+  words: string[]
+  colors: string[][]
+}
 
-  const colors = [
-    ['#22C55E', '#10b981'],
-    ['#F97316', '#eab308'],
-    ['#EC4899', '#8B5CF6'],
-    ['#3B82F6', '#06b6d4'],
-  ]
-
+const HomeBanner: React.FC<iHomeBanner> = ({
+  headTitle,
+  title,
+  words,
+  colors,
+}: iHomeBanner) => {
   const wordsCount = words.length
   const [typingInterval, setTypingInterval] = useState(250)
   const [colorIndex, setColorIndex] = useState(0)
@@ -96,15 +91,15 @@ const HomeBanner: React.FC = () => {
   return (
     <section className="my-10 grid grid-cols-12 content-center items-center gap-10">
       <Link href="/about" passHref>
-        <div className="col-span-9 col-start-3 md:col-end-6 md:col-span-3 cursor-pointer">
+        <div className="col-span-7 col-start-3 md:col-end-6 md:col-span-3 cursor-pointer">
           <Avatar />
         </div>
       </Link>
       <Link href="/about" passHref>
         <div className=" col-span-11 col-start-1 md:col-start-6 md:col-span-6 cursor-pointer">
-          <span className="text-2xl lg:text-3xl">Hello, I&#8216;m</span>
+          <span className="text-2xl lg:text-3xl">{headTitle}</span>
           <h1 className="font-bold tracking-wide ">
-            <Textfit mode="single">Bruno Genaro</Textfit>
+            <Textfit mode="single">{title}</Textfit>
           </h1>
           <Gradient
             className="tracking-wide font-bold text-3xl"
