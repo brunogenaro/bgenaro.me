@@ -20,7 +20,7 @@
     },
     {
       "label": "podcast",
-      "redirectTo": "/podcast",
+      "redirectTo": "/podcasts",
       "customStyle": "hover:text-purple-500",
       "activeStyle": "text-purple-500"
     },
