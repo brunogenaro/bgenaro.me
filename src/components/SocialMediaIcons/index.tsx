@@ -1,4 +1,3 @@
-import { GetServerSideProps } from 'next'
 import React from 'react'
 import socialMediaIconsJson from '../../content/components/socialMediaIcons.json'
 import IconLink from '../IconLink'
@@ -40,11 +39,5 @@ SocialMediaIcons.defaultProps = {
   customFolder: 'socialIcon',
   socialMediaIcons: socialMediaIconsJson,
 }
-
-export const getServerSideProps: GetServerSideProps = async () => ({
-  props: {
-    socialMediaIcons: socialMediaIconsJson,
-  },
-})
 
 export default SocialMediaIcons
