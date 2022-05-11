@@ -67,7 +67,7 @@ const HomeBanner: React.FC<iHomeBanner> = ({
     if (currentCharacter === WordLength - 1 && direction === 1) {
       setTypingInterval(() => 2000)
     } else {
-      setTypingInterval(Math.floor(Math.random() * 100) + 120)
+      setTypingInterval(Math.floor(Math.random() * 100) + 20)
     }
   }
 
