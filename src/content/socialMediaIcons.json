@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+      "icon": "instagram.svg",
+      "label": "instagram",
+      "link": "https://www.instagram.com/brunogenaro/"
+    },
+    {
+      "icon": "facebook.svg",
+      "label": "facebook",
+      "link": "https://www.facebook.com/bruno.genaro"
+    },
+    {
+      "icon": "twitter.svg",
+      "label": "twitter",
+      "link": "https://twitter.com/bfgenaro"
+    },
+    {
+      "icon": "linkedin.svg",
+      "label": "linkedin",
+      "link": "https://www.linkedin.com/in/brunogenaro/"
+    },
+    {
+      "icon": "github.svg",
+      "label": "github",
+      "link": "https://github.com/brunogenaro"
+    }
+  ]
+}
