@@ -2,7 +2,7 @@
   "title": "podcasts",
   "description": "descrição do podcasts",
   "path": "/podcasts",
-  "gridTemplateColumns": "grid grid-cols-1 gap-10 2xl:grid-cols-2",
+  "gridTemplateColumns": "grid grid-cols-1 gap-10 lg:grid-cols-2",
   "cards": [
     {
       "title": "podcast 1",

@@ -48,10 +48,14 @@ export const Card: React.FC<iCard> = ({
         />
       </div>
       <div className="px-5 pb-8 pt-3">
-        <h4 className="mb-3  text-2xl font-bold tracking-wide ">{title}</h4>
-        <p className="mb-5  text-lg tracking-wide ">{description}</p>
-        <p className="">{location}</p>
-        <span className="">{date}</span>
+        <h4 className="mb-3  text-2xl font-bold tracking-wide line-clamp-2">
+          {title}
+        </h4>
+        <p className="mb-5  text-lg tracking-wide line-clamp-3">
+          {description}
+        </p>
+        <p className="line-clamp-1">{location}</p>
+        <span className="line-clamp-1">{date}</span>
       </div>
     </a>
   </li>
