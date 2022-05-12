@@ -35,6 +35,7 @@ const NavigationList: React.FC<iNavigationList> = ({
         customStyle={`${textColor} ${item.customStyle}`}
         clickHandler={closeMenu}
         activeStyle={item.activeStyle}
+        key={item.label}
       />
     ))}
   </ul>

@@ -26,7 +26,7 @@ const CareerSection: React.FC<iCareerSection> = ({
   return (
     <section className="mt-10 grid grid-cols-12 text-xl leading-8 tracking-wider">
       <ul className="hidden md:block col-start-2 col-span-2 lg:col-span-2 lg:col-start-3 mt-16 text-right">
-        {career.map(item => (
+        {career?.map(item => (
           <li className="flex justify-end" key={item.company.name}>
             <button
               onClick={() => {
@@ -77,7 +77,7 @@ const CareerSection: React.FC<iCareerSection> = ({
         {showItem && (
           <div className="relative">
             <ul className="absolute mt-2 z-10 bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600">
-              {career.map(item => (
+              {career?.map(item => (
                 <li key={item.company.name}>
                   <button
                     onClick={() => {

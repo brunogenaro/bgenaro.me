@@ -28,6 +28,7 @@ const SocialMediaIcons = ({
           source={`${customFolder}/${socialMediaIcon.icon}`}
           label={socialMediaIcon.label}
           redirectTo={socialMediaIcon.link}
+          key={socialMediaIcon.icon}
         />
       ))}
     </div>

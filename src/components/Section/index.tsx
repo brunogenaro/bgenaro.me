@@ -26,7 +26,7 @@ const Section: React.FC<iSection> = ({
       {title}
     </GradientText>
     <ul className={gridTemplateColumns}>
-      {cards.map((card: iCard) => (
+      {cards?.map((card: iCard) => (
         <Card
           title={card.title}
           description={card.description}
