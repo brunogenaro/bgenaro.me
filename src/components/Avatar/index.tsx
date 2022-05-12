@@ -8,7 +8,10 @@ interface iAvatar {
   gradient?: string[]
 }
 const Avatar = ({ src, alt, gradient }: iAvatar) => (
-  <GradientBackground className="p-1 rounded-full" gradient={gradient}>
+  <GradientBackground
+    className="p-1 rounded-full"
+    gradient={gradient || ['#3B82F6', '#06b6d4']}
+  >
     <div className="overflow-hidden rounded-full">
       <Image
         src={src || ''}
