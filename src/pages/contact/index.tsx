@@ -35,7 +35,7 @@ const Contact: React.FC<iContact> = (props: iContact) => {
         />
       </div>
       <div className="hidden xl:block xl:col-end-5 xl:col-span-3">
-        <Avatar />
+        <Avatar gradient={gradient} />
       </div>
       <div className="col-start-1 col-span-12 sm:col-start-2 sm:col-span-10 md:col-span-8 md:col-start-3 xl:col-span-5 xl:col-start-6">
         <h3 className="mb-5 text-3xl font-bold">Let&#39;s talk</h3>

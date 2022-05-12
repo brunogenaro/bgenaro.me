@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Textfit } from 'react-textfit'
+import * as THREE from 'three'
+import RINGS from 'vanta/dist/vanta.net.min'
 import Avatar from '../Avatar'
 import Gradient from '../GradientText/styles'
 
@@ -88,11 +90,44 @@ const HomeBanner: React.FC<iHomeBanner> = ({
     colorSwapper()
   }, [WordLength])
 
+  const [vantaEffect, setVantaEffect] = useState(0)
+  const vantaRef = useRef(null)
+
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        RINGS({
+          el: vantaRef.current,
+          THREE,
+          mouseControls: true,
+          touchControls: false,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0xffffff,
+          backgroundColor: 0x111827,
+          showDots: true,
+          points: 20.0,
+          maxDistance: 20.0,
+          spacing: 20.0,
+        }),
+      )
+    }
+    return () => {
+      if (vantaEffect) (vantaEffect as any).destroy()
+    }
+  }, [vantaEffect])
+
   return (
-    <section className="my-10 grid grid-cols-12 content-center items-center gap-10">
+    <section
+      ref={vantaRef}
+      className="my-5 py-8 grid grid-cols-12 content-center items-center gap-10 rounded-2xl overflow-hidden"
+    >
       <Link href="/about" passHref>
         <div className="col-span-7 col-start-3 md:col-end-6 md:col-span-3 cursor-pointer">
-          <Avatar />
+          <Avatar gradient={colors[colorIndex]} />
         </div>
       </Link>
       <Link href="/about" passHref>

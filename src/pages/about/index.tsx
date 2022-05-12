@@ -41,7 +41,7 @@ const About: React.FC<iAbout> = (props: iAbout) => {
         />
       </div>
       <div className=" col-span-8 col-start-3 lg:col-end-5 lg:col-span-3">
-        <Avatar />
+        <Avatar gradient={gradient} />
       </div>
       <div className="col-span-12 col-start-1 md:col-span-10 md:col-start-2 lg:col-span-6 lg:col-start-6">
         <h3 className="mb-5 text-3xl font-bold">Bio</h3>
