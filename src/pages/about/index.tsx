@@ -3,7 +3,7 @@ import React from 'react'
 import { iContentPageStyle } from '..'
 import Avatar from '../../components/Avatar'
 import Banner from '../../components/Banner'
-import CareerSection, { iCareerSection } from '../../components/CareerSection'
+import CareerSection, { iCareer } from '../../components/CareerSection'
 import CopyTextButton from '../../components/CopyTextButton'
 import DownloadButton from '../../components/DownloadButton'
 import Container from '../../components/Page/styles'
@@ -18,7 +18,7 @@ export interface iAbout {
       text: string
       downloadFile: string
       fileName: string
-      career: iCareerSection
+      career: iCareer[]
     }
     style: iContentPageStyle
   }
