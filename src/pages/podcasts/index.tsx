@@ -1,56 +1,38 @@
+import { GetServerSideProps, NextPage } from 'next'
 import React from 'react'
-import PodcastsBanner from '../../components/PodcastsBanner'
-import PodcastsCard from '../../components/PodcastsCard'
-import PodcastsContainer from './styles'
+import { iContentPageStyle } from '..'
+import Page, { iPage } from '../../components/Page'
+import dataJson from '../../content/pages/podcasts.json'
+import styleJson from '../../content/styles/podcasts.json'
 
-const Podcasts: React.FC = () => (
-  <PodcastsContainer className="px-10 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-52">
-    <PodcastsBanner />
-    <ul className="grid grid-cols-1 gap-10 lg:grid-cols-1 2xl:grid-cols-2">
-      <PodcastsCard
-        title="FrontInSampa"
-        description=""
-        path="https://mobile.twitter.com/frontinsp/status/1469275048859119626"
-        date="2021"
-        img="1.jpg"
-      />
-      <PodcastsCard
-        title="Dan Vitoriano"
-        description=""
-        path="https://mobile.twitter.com/danvitoriano/status/1379070228819275779"
-        date="2021"
-        img="2.jpg"
-      />
-      <PodcastsCard
-        title="OnlyTechFans"
-        description=""
-        path="https://www.youtube.com/watch?v=-SOGmtiR-pk"
-        date="2021"
-        img="3.jpg"
-      />
-      <PodcastsCard
-        title="Fernando Schaefer"
-        description=""
-        path="https://www.instagram.com/p/CGabOuZJsMr/"
-        date="2020"
-        img="1.jpg"
-      />
-      <PodcastsCard
-        title="Rad Society Podcast"
-        description=""
-        path="https://open.spotify.com/episode/0fYn6ewtEQLp0ATZ4NT0dk?si=22fef3ce68914146"
-        date="2020"
-        img="2.jpg"
-      />
-      <PodcastsCard
-        title="DevNaEstrada"
-        description=""
-        path="https://devnaestrada.com.br/2016/09/16/bruno-genaro.html"
-        date="2016"
-        img="3.jpg"
-      />
-    </ul>
-  </PodcastsContainer>
-)
+export interface iPodcasts {
+  podcasts: {
+    data: iPage
+    style: iContentPageStyle
+  }
+}
+
+const Podcasts: NextPage<iPodcasts> = (props: iPodcasts) => {
+  const { podcasts } = props
+  const { data, style } = podcasts
+  const { cards, title, subtitle } = data
+  const { color, icon, gradient } = style
+  return (
+    <Page
+      cards={cards}
+      color={color}
+      title={title}
+      icon={icon || ''}
+      gradient={gradient}
+      subtitle={subtitle}
+    />
+  )
+}
+
+export const getServerSideProps: GetServerSideProps = async () => ({
+  props: {
+    podcasts: { data: dataJson, style: styleJson },
+  },
+})
 
 export default Podcasts

@@ -29,5 +29,12 @@ export default createGlobalStyle`
   background: #D1D5DB;
 }
 
+.scale-101{
+  transition: all 0.3s ease-in-out;
+ :hover{
+   transform: scale(1.02);
+ }
+}
+
 
 `

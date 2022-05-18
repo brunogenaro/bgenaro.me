@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -7,6 +6,7 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document'
+import Script from 'next/script'
 import React from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -26,12 +26,12 @@ export default class MyDocument extends Document {
       const initialProps = await Document.getInitialProps(ctx)
       return {
         ...initialProps,
-        styles: (
+        styles: [
           <>
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </>
-        ),
+          </>,
+        ],
       }
     } finally {
       sheet.seal()
@@ -116,9 +116,11 @@ export default class MyDocument extends Document {
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
           <meta charSet="utf-8" />
+          <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js" />
         </Head>
-        <body className="bg-gray-900">
+        <body className="bg-gray-900 text-gray-300">
           <Main />
+
           <NextScript />
         </body>
       </Html>

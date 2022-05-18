@@ -1,0 +1,101 @@
+{
+  "title": "talks",
+  "subtitle": "Conferences, talks and workshops to stay updated",
+  "path": "/talks",
+
+  "cards": [
+    {
+      "title": "Dicas de como evoluir profissionalmente como Desenvolvedor Web",
+      "description": "Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. Além disso é consultor JavaScript focado em React JS e Organizador do Orlando JS Meetup.",
+      "path": "https://www.youtube.com/watch?v=BmJ1GcAwM3g",
+      "date": "2020",
+      "location": "Online - Piracicaba",
+      "img": "/assets/image/bitmap/1.jpg"
+    },
+    {
+      "title": "Dicas de como evoluir profissionalmente como Desenvolvedor de Software (também no exterior)",
+      "description": "",
+      "path": "https://mobile.twitter.com/bfgenaro/status/1224722280112062464",
+      "date": "2020",
+      "location": "Meetup DevelopersBr - Sao Paulo",
+      "img": "/assets/image/bitmap/3.jpg"
+    },
+    {
+      "title": "Full JAM Stack React Developer",
+      "description": "The JAM stack is a modern web development architecture based on client-side JavaScript and reusable APIs.",
+      "path": "https://www.meetup.com/OrlandoJS/events/264367392/",
+      "date": "2019",
+      "location": "OrlandoJS",
+      "img": "/assets/image/bitmap/cardCover/orlandojs.jpg"
+    },
+    {
+      "title": "React e comunidade salvaram minha vida",
+      "description": "",
+      "path": "https://www.instagram.com/p/B7-AxJWl_EG/",
+      "date": "2020",
+      "location": "Meetup HTML SP",
+      "img": "/assets/image/bitmap/3.jpg"
+    },
+    {
+      "title": "Server-Side Rendering with ReactJS",
+      "description": "",
+      "path": "https://mobile.twitter.com/Jazz_Con/status/837330854582104065/photo/1",
+      "date": "2017",
+      "location": "Jazzcon.Tech - New Orlando (USA)"
+    },
+    {
+      "title": "Renderizando componentes React no servidor",
+      "description": "O ReactJS tem a poderosa habilidade de renderizar seus componentes no servidor. Nesta apresentação Bruno irá mostrar os benefícios e também como e quando podemos explorar esta prática.",
+      "path": "https://www.youtube.com/watch?v=sF__9OISv_E",
+      "date": "2017",
+      "location": "Front In Sampa",
+      "img": "/assets/image/bitmap/2.jpg"
+    },
+    {
+      "title": "Universal ReactJS",
+      "description": "",
+      "path": "https://www.meetup.com/OrlandoJS/events/234319535/0",
+      "date": "2016",
+      "location": "OrlandoJS",
+      "img": "/assets/image/bitmap/cardCover/orlandojs_2.jpg"
+    },
+    {
+      "title": "Let's build React Components together",
+      "description": "The main idea of this live coding is to 'think the React way'. With that said, it really doesn't matter your knowledge on React, since we are going to do this together.",
+      "path": "https://www.meetup.com/OrlandoJS/events/231758882/",
+      "date": "2016",
+      "location": "OrlandoJS",
+      "img": "/assets/image/bitmap/3.jpg"
+    },
+    {
+      "title": "The Future of React With Universal Applications",
+      "description": "",
+      "path": "https://www.youtube.com/watch?v=D9a2ovt_CrU",
+      "date": "2016",
+      "location": "Little Rock Tech Fest"
+    },
+    {
+      "title": "Now is the best time to be a Front-End Developer",
+      "description": "It’s hard to measure a developer’s knowledge based only on the term “front end developer.”",
+      "path": "https://www.meetup.com/Front-End-Orlando/events/232278131/",
+      "date": "2016",
+      "location": "Front End Devs Orlando",
+      "img": "/assets/image/bitmap/3.jpg"
+    },
+    {
+      "title": "Essential JavaScript Libraries to Improve Your Workflow",
+      "description": "",
+      "path": "https://www.youtube.com/watch?v=hntiPSG1jDM&t",
+      "date": "2016",
+      "location": "Orlando Devs"
+    },
+    {
+      "title": "Improving your Sublime Text 3 workflow",
+      "description": "I'll be covering the editor settings, command palette, projects, 'must have' packages (plugins), themes and also keyboard shortcuts to improve your workflow.",
+      "path": "https://www.meetup.com/Front-End-Orlando/events/219671178/",
+      "date": "2015",
+      "location": "Front End Devs Orlando",
+      "img": "/assets/image/bitmap/2.jpg"
+    }
+  ]
+}

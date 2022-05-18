@@ -1,0 +1,22 @@
+{
+  "title": "podcasts",
+  "description": "descrição do podcasts",
+  "path": "/podcasts",
+  "gridTemplateColumns": "grid grid-cols-1 gap-10 lg:grid-cols-2",
+  "cards": [
+    {
+      "title": "FrontInSampa",
+      "description": "",
+      "path": "https://mobile.twitter.com/frontinsp/status/1469275048859119626",
+      "date": "2021",
+      "img": "/assets/image/bitmap/1.jpg"
+    },
+    {
+      "title": "Dan Vitoriano",
+      "description": "",
+      "path": "https://mobile.twitter.com/danvitoriano/status/1379070228819275779",
+      "date": "2021",
+      "img": "/assets/image/bitmap/2.jpg"
+    }
+  ]
+}

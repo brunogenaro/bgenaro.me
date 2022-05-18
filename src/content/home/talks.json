@@ -1,0 +1,40 @@
+{
+  "title": "talks",
+  "description": "descrição do talks",
+  "path": "/talks",
+  "gridTemplateColumns": "grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4",
+  "cards": [
+    {
+      "title": "Dicas de como evoluir profissionalmente como Desenvolvedor Web",
+      "description": "Bruno começou a carreira como desenvolvedor web em Piracicaba e hoje trabalha na Cisco em Orlando/FL. Além disso é consultor JavaScript focado em React JS e Organizador do Orlando JS Meetup.",
+      "path": "https://www.youtube.com/watch?v=BmJ1GcAwM3g",
+      "date": "2020",
+      "location": "Online - Piracicaba",
+      "img": "/assets/image/bitmap/1.jpg"
+    },
+    {
+      "title": "Dicas de como evoluir profissionalmente como Desenvolvedor de Software (também no exterior)",
+      "description": "",
+      "path": "https://mobile.twitter.com/bfgenaro/status/1224722280112062464",
+      "date": "2020",
+      "location": "Meetup DevelopersBr - Sao Paulo",
+      "img": "/assets/image/bitmap/3.jpg"
+    },
+    {
+      "title": "Full JAM Stack React Developer",
+      "description": "The JAM stack is a modern web development architecture based on client-side JavaScript and reusable APIs.",
+      "path": "https://www.meetup.com/OrlandoJS/events/264367392/",
+      "date": "2019",
+      "location": "OrlandoJS",
+      "img": "/assets/image/bitmap/cardCover/orlandojs.jpg"
+    },
+    {
+      "title": "React e comunidade salvaram minha vida",
+      "description": "",
+      "path": "https://www.instagram.com/p/B7-AxJWl_EG/",
+      "date": "2020",
+      "location": "Meetup HTML SP",
+      "img": "/assets/image/bitmap/3.jpg"
+    }
+  ]
+}

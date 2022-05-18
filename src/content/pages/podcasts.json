@@ -1,0 +1,49 @@
+{
+  "title": "podcasts",
+  "subtitle": "Ideas and opinions to keep improving ",
+  "path": "/podcasts",
+  "cards": [
+    {
+      "title": "FrontInSampa",
+      "description": "",
+      "path": "https://mobile.twitter.com/frontinsp/status/1469275048859119626",
+      "date": "2021",
+      "img": "/assets/image/bitmap/1.jpg"
+    },
+    {
+      "title": "Dan Vitoriano",
+      "description": "",
+      "path": "https://mobile.twitter.com/danvitoriano/status/1379070228819275779",
+      "date": "2021",
+      "img": "/assets/image/bitmap/2.jpg"
+    },
+    {
+      "title": "OnlyTechFans",
+      "description": "",
+      "path": "https://www.youtube.com/watch?v=-SOGmtiR-pk",
+      "date": "2021",
+      "img": "/assets/image/bitmap/3.jpg"
+    },
+    {
+      "title": "Fernando Schaefer",
+      "description": "",
+      "path": "https://www.instagram.com/p/CGabOuZJsMr/",
+      "date": "2020",
+      "img": "/assets/image/bitmap/1.jpg"
+    },
+    {
+      "title": "Rad Society Podcast",
+      "description": "",
+      "path": "https://open.spotify.com/episode/0fYn6ewtEQLp0ATZ4NT0dk?si=22fef3ce68914146",
+      "date": "2020",
+      "img": "/assets/image/bitmap/2.jpg"
+    },
+    {
+      "title": "DevNaEstrada",
+      "description": "",
+      "path": "https://devnaestrada.com.br/2016/09/16/bruno-genaro.html",
+      "date": "2016",
+      "img": "/assets/image/bitmap/3.jpg"
+    }
+  ]
+}

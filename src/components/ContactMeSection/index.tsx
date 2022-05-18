@@ -1,11 +1,9 @@
-import axios from 'axios'
 import { Form, Formik } from 'formik'
-import Link from 'next/link'
 import toast, { Toaster } from 'react-hot-toast'
 import FormField from '../FormField'
 import SubmitSchema from './SubmitSchema'
 
-interface iFormData {
+export interface iFormData {
   name: string
   email: string
   message: string
@@ -13,55 +11,43 @@ interface iFormData {
 }
 
 const ContactMeSection: React.FC = () => {
-  const mailto = 'hello@bgenaro.me'
-  const submit = ({ subject, email, message, name }: iFormData) => {
-    toast
-      .promise(
-        axios.post(`https://nodemailer-dev.herokuapp.com/send`, {
-          email: mailto,
-          subject: `${subject}`,
-          body: `${name} - ${email} <br/><br/> ${message}`,
-        }),
-        {
-          loading: 'Sending...',
-          success: (
-            <span className="bold text-xl font-bold tracking-wider text-green-500">
-              E-mail sent successfully!
-            </span>
-          ),
-          error: (
-            <span className="text-xl font-bold tracking-wider text-red-500">
-              Something went wrong.
-              <br />
-              Try again later
-            </span>
-          ),
-        },
-      )
-      .catch(error => {
-        console.error(error)
-      })
+  const initialValues: iFormData = {
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  }
+
+  const handleSubmit = async ({ name, email, message, subject }: iFormData) => {
+    const request = await fetch('/api/sendgrid', {
+      body: JSON.stringify({
+        email,
+        name,
+        subject,
+        message,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+      // eslint-disable-next-line no-shadow
+    })
+    if (request.status === 200) {
+      toast.success('Message sent successfully')
+    } else {
+      toast.error('Message failed to send')
+    }
   }
 
   return (
     <Formik
-      initialValues={{ name: '', email: '', subject: '', message: '' }}
+      initialValues={initialValues}
       validationSchema={SubmitSchema}
-      onSubmit={submit}
+      onSubmit={handleSubmit}
     >
       {({ errors, touched }) => (
         <Form>
           <Toaster />
-          <div className="pb-10">
-            <Link href="/contact" passHref>
-              <h2 className="cursor-pointer text-4xl font-bold text-gray-300">
-                Contact Me
-              </h2>
-            </Link>
-            <p className="pt-4 text-xl leading-9 text-gray-300">
-              hello@bgenaro.me
-            </p>
-          </div>
           <div className="grid grid-cols-2 grid-rows-6 gap-4">
             <FormField
               name="name"
@@ -100,7 +86,7 @@ const ContactMeSection: React.FC = () => {
                 Object.keys(errors).length > 0 ||
                 Object.keys(touched).length < 3
                   ? `mt-10 box-content cursor-not-allowed rounded-xl border-2  border-blue-900 p-3 text-xl  font-bold text-blue-900 `
-                  : `mt-10 box-content rounded-xl border-2 border-blue-500  p-3 text-xl font-bold  text-blue-500 duration-200 ease-in-out hover:scale-105`
+                  : `mt-10 box-content rounded-xl border-2 border-blue-500  p-3 text-xl font-bold  text-blue-500 duration-200 ease-in-out scale-101`
               }
               type="submit"
             >

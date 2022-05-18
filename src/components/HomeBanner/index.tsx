@@ -1,57 +1,150 @@
 import Link from 'next/link'
-import TypeAnimation from 'react-type-animation'
+import { useEffect, useRef, useState } from 'react'
+import { Textfit } from 'react-textfit'
+import * as THREE from 'three'
+import RINGS from 'vanta/dist/vanta.net.min'
 import Avatar from '../Avatar'
-import InsertionPointer, { ColorAnimation, SpaceHolder } from './styles'
+import Gradient from '../GradientText/styles'
 
-const HomeBanner: React.FC = () => {
-  const color = 'from-cyan-500 to-blue-500'
-  const interval = 3000
+export interface iHomeBanner {
+  headTitle: string
+  title: string
+  words: string[]
+  colors: string[][]
+}
+
+const HomeBanner: React.FC<iHomeBanner> = ({
+  headTitle,
+  title,
+  words,
+  colors,
+}: iHomeBanner) => {
+  const wordsCount = words.length
+  const [typingInterval, setTypingInterval] = useState(250)
+  const [colorIndex, setColorIndex] = useState(0)
+  const [switcher, setSwitcher] = useState(false)
+  const [index, setIndex] = useState(0)
+  const [currentCharacter, setCurrentCharacter] = useState(1)
+  const [WordLength, setWordLength] = useState(words[0].length)
+  const [direction, setDirection] = useState(1)
+  const [word, setWord] = useState('')
+
+  const typing = () => {
+    // Moving character forward or backward
+    if (direction) setCurrentCharacter(s => s + 1)
+    if (!direction) setCurrentCharacter(s => s - 1)
+
+    // Changing direction
+    if (currentCharacter === WordLength - 1 && direction === 1) {
+      setDirection(0)
+    }
+    if (currentCharacter === 0 && direction === 0) {
+      setDirection(1)
+    }
+
+    // Changing Word
+    if (currentCharacter === 0 && direction === 0) {
+      if (index === wordsCount - 1) {
+        setIndex(0)
+        setWordLength(() => words[0].length)
+      }
+      if (index < wordsCount - 1) {
+        const nextWord = words[index + 1]
+        setWordLength(() => nextWord.length)
+        setIndex(s => s + 1)
+      }
+    }
+  }
+
+  const colorSwapper = () => {
+    if (colorIndex === colors.length - 1) {
+      setColorIndex(0)
+    }
+    if (colorIndex < colors.length - 1) {
+      setColorIndex(s => s + 1)
+    }
+  }
+
+  const antMetronome = () => {
+    if (currentCharacter === WordLength - 1 && direction === 1) {
+      setTypingInterval(() => 2000)
+    } else {
+      setTypingInterval(Math.floor(Math.random() * 100) + 20)
+    }
+  }
+
+  const toggle = async () => {
+    setTimeout(() => {
+      setSwitcher(s => !s)
+    }, typingInterval)
+  }
+
+  useEffect(() => {
+    toggle()
+    typing()
+    antMetronome()
+    setWord(words[index].substring(0, currentCharacter))
+  }, [switcher])
+
+  useEffect(() => {
+    colorSwapper()
+  }, [WordLength])
+
+  const [vantaEffect, setVantaEffect] = useState(0)
+  const vantaRef = useRef(null)
+
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        RINGS({
+          el: vantaRef.current,
+          THREE,
+          mouseControls: true,
+          touchControls: false,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0xffffff,
+          backgroundColor: 0x111827,
+          showDots: true,
+          points: 20.0,
+          maxDistance: 20.0,
+          spacing: 20.0,
+        }),
+      )
+    }
+    return () => {
+      if (vantaEffect) (vantaEffect as any).destroy()
+    }
+  }, [vantaEffect])
 
   return (
-    <Link href="/about" passHref>
-      <section className="relative my-32 flex items-center justify-between 2xl:px-20">
-        <div className="cursor-pointer">
-          <span className="ml-1 text-sm tracking-wide text-gray-300 sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-            Hello, I&#8216;m
-          </span>
-          <h1 className="text-3xl font-bold tracking-wide text-gray-300 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-            Bruno Genaro
+    <section
+      ref={vantaRef}
+      className="my-5 py-8 grid grid-cols-12 content-center items-center gap-10 rounded-2xl overflow-hidden"
+    >
+      <Link href="/about" passHref>
+        <div className="col-span-7 col-start-3 md:col-end-6 md:col-span-3 cursor-pointer">
+          <Avatar gradient={colors[colorIndex]} />
+        </div>
+      </Link>
+      <Link href="/about" passHref>
+        <div className=" col-span-11 col-start-1 md:col-start-6 md:col-span-6 cursor-pointer">
+          <span className="text-2xl lg:text-3xl">{headTitle}</span>
+          <h1 className="font-bold tracking-wide ">
+            <Textfit mode="single">{title}</Textfit>
           </h1>
-          <ColorAnimation className="flex items-center">
-            <TypeAnimation
-              cursor
-              wrapper="h2"
-              repeat={Infinity}
-              sequence={[
-                'Senior Software Engineer',
-                interval,
-                'JavaScript Consultant',
-                interval,
-                'CEO at WebSolutionsFL',
-                interval,
-                'Speaker',
-                interval,
-                'Event Producer',
-                interval,
-                'OrlandoJS Meetup Co-Organizer',
-                interval,
-                'Father to two beautiful daughters',
-                100,
-                'beautiful daughters',
-                interval,
-              ]}
-              className={`bg-gradient-to-br ${color} bg-clip-text pb-3 text-3xl font-bold tracking-wide text-transparent sm:text-4xl md:text-5xl lg:text-6xl`}
-            />
-
-            <InsertionPointer className={`bg-gradient-to-br ${color}`} />
-          </ColorAnimation>
+          <Gradient
+            className="tracking-wide font-bold text-3xl"
+            colors={colors[colorIndex]}
+          >
+            <Textfit mode="multi"> {word}|</Textfit>
+          </Gradient>
         </div>
-        <SpaceHolder />
-        <div className="cursor-pointer">
-          <Avatar />
-        </div>
-      </section>
-    </Link>
+      </Link>
+    </section>
   )
 }
 

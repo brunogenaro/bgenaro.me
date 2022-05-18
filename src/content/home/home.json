@@ -1,0 +1,19 @@
+{
+  "headTitle": "Hello, I'm",
+  "title": "Bruno Genaro",
+  "words": [
+    "Senior Software Engineer",
+    "JavaScript Consultant",
+    "CEO at WebSolutionsFL",
+    "Speaker",
+    "Event Producer",
+    "OrlandoJS Meetup Co-Organizer",
+    "Father to two beautiful daughters"
+  ],
+  "colors": [
+    ["#22C55E", "#10b981"],
+    ["#F97316", "#eab308"],
+    ["#EC4899", "#8B5CF6"],
+    ["#3B82F6", "#06b6d4"]
+  ]
+}
