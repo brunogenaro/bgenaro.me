@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 import React from 'react'
 import { iContentPageStyle } from '..'
 import Avatar from '../../components/Avatar'
@@ -24,7 +24,7 @@ export interface iAbout {
   }
 }
 
-const About: React.FC<iAbout> = (props: iAbout) => {
+const About: NextPage<iAbout> = (props: iAbout) => {
   const { about } = props
   const { data, style } = about
   const { title, subtitle, text, downloadFile, fileName, career } = data

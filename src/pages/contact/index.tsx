@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 import React from 'react'
 import { iContentPageStyle } from '..'
 import Avatar from '../../components/Avatar'
@@ -19,7 +19,7 @@ export interface iContact {
   }
 }
 
-const Contact: React.FC<iContact> = (props: iContact) => {
+const Contact: NextPage<iContact> = (props: iContact) => {
   const { contact } = props
   const { data, style } = contact
   const { title, subtitle, text } = data

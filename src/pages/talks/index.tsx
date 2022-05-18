@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 import React from 'react'
 import { iContentPageStyle } from '..'
 import Page, { iPage } from '../../components/Page'
@@ -12,7 +12,7 @@ interface iTalks {
   }
 }
 
-const Talks: React.FC<iTalks> = (props: iTalks) => {
+const Talks: NextPage<iTalks> = (props: iTalks) => {
   const { talks } = props
   const { data, style } = talks
   const { cards, title, subtitle } = data

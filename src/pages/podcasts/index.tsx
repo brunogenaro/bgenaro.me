@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 import React from 'react'
 import { iContentPageStyle } from '..'
 import Page, { iPage } from '../../components/Page'
@@ -12,7 +12,7 @@ export interface iPodcasts {
   }
 }
 
-const Podcasts: React.FC<iPodcasts> = (props: iPodcasts) => {
+const Podcasts: NextPage<iPodcasts> = (props: iPodcasts) => {
   const { podcasts } = props
   const { data, style } = podcasts
   const { cards, title, subtitle } = data

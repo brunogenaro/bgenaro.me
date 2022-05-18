@@ -1,7 +1,8 @@
+import { NextPage } from 'next'
 import Image from 'next/image'
 import React from 'react'
 
-const TalksArticle: React.FC = () => (
+const TalksArticle: NextPage = () => (
   <article className="px-10 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-52">
     <div className="px-5 md:px-10 2xl:px-20">
       <time className="mb-5 text-base tracking-widest  lg:text-lg">
