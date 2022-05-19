@@ -125,12 +125,12 @@ const HomeBanner: React.FC<iHomeBanner> = ({
       ref={vantaRef}
       className="my-5 py-8 grid grid-cols-12 content-center items-center gap-10 rounded-2xl overflow-hidden"
     >
-      <Link href="/about" passHref>
+      <Link href="/about">
         <div className="col-span-7 col-start-3 md:col-end-6 md:col-span-3 cursor-pointer">
           <Avatar gradient={colors[colorIndex]} />
         </div>
       </Link>
-      <Link href="/about" passHref>
+      <Link href="/about">
         <div className=" col-span-11 col-start-1 md:col-start-6 md:col-span-6 cursor-pointer">
           <span className="text-2xl lg:text-3xl">{headTitle}</span>
           <h1 className="font-bold tracking-wide ">

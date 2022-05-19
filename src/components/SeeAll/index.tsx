@@ -7,7 +7,7 @@ interface iSeeAll {
 }
 
 export const SeeAll: React.FC<iSeeAll> = ({ title, path }: iSeeAll) => (
-  <Link href={path} passHref>
+  <Link href={path}>
     <div
       className=" mt-10  flex cursor-pointer items-center justify-end duration-200 ease-in-out
      hover:opacity-80"
