@@ -62,9 +62,9 @@ const Banner: React.FC<iBanner> = ({
           >
             <Textfit mode="single">{title}</Textfit>
           </GradientText>
-          <p className="pl-10 text-lg leading-6  lg:leading-7 xl:text-xl  xl:leading-8 2xl:text-3xl">
+          <div className="pl-10 text-lg leading-6  lg:leading-7 xl:text-xl  xl:leading-8 2xl:text-3xl">
             <Textfit mode="multi">{subtitle}</Textfit>
-          </p>
+          </div>
         </div>
       </div>
       <div className=" block sm:hidden">
