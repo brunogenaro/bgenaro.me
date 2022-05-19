@@ -47,9 +47,6 @@ const CareerSection: React.FC<iCareerSection> = ({
       <div className="block md:hidden">
         <div className="flex items-baseline">
           <h3 className="text-3xl font-bold">Career</h3>
-          <span className="ml-2 text-sm whitespace-nowrap ">
-            (select to see other companies)
-          </span>
         </div>
         <div className="my-3">
           <button
@@ -82,6 +79,7 @@ const CareerSection: React.FC<iCareerSection> = ({
                   <button
                     onClick={() => {
                       setActiveItem(item)
+                      setShowItem(false)
                     }}
                     type="button"
                     className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left"
