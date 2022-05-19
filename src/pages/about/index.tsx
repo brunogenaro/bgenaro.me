@@ -46,9 +46,11 @@ const About: NextPage<iAbout> = (props: iAbout) => {
       <div className="col-span-12 col-start-1 md:col-span-10 md:col-start-2 lg:col-span-6 lg:col-start-6">
         <h3 className="mb-5 text-3xl font-bold">Bio</h3>
         <p className="text-xl leading-8 tracking-wider">{text}</p>
-        <div className="my-10 flex">
+        <div className="my-10 flex whitespace-nowrap">
           <CopyTextButton text={text} />
-          <DownloadButton src={downloadFile} fileName={fileName} />
+          <div className="hidden sm:block">
+            <DownloadButton src={downloadFile} fileName={fileName} />
+          </div>
         </div>
       </div>
       <div className="col-span-full">
