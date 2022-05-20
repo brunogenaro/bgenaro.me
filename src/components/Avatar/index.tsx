@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import GradientBackground from './styles'
+import GradientBackground, { BackgroundMask } from './styles'
 
 interface iAvatar {
   src?: string
@@ -8,11 +8,8 @@ interface iAvatar {
   gradient?: string[]
 }
 const Avatar = ({ src, alt, gradient }: iAvatar) => (
-  <GradientBackground
-    className="p-1 rounded-full"
-    gradient={gradient || ['#3B82F6', '#06b6d4']}
-  >
-    <div className="overflow-hidden rounded-full">
+  <GradientBackground gradient={gradient || ['#3B82F6', '#06b6d4']}>
+    <BackgroundMask>
       <Image
         src={src || ''}
         alt={alt}
@@ -20,8 +17,9 @@ const Avatar = ({ src, alt, gradient }: iAvatar) => (
         width="100%"
         height="100%"
         layout="responsive"
+        priority
       />
-    </div>
+    </BackgroundMask>
   </GradientBackground>
 )
 

@@ -48,24 +48,36 @@ const Banner: React.FC<iBanner> = ({
   }, [vantaEffect])
 
   return (
-    <div
-      ref={vantaRef}
-      className="mb-10 grid h-52 grid-cols-12 grid-rows-6 overflow-hidden rounded-2xl p-10  pt-0 "
-    >
-      <div className="col-span-full col-start-2 row-start-2">
-        <GradientText
-          margin="-mb-3"
-          gradient={textGradient}
-          size="text-7xl"
-          breakPoints="md:text-8xl xl:text-9xl"
-        >
-          <Textfit mode="single">{title}</Textfit>
-        </GradientText>
-        <p className="pl-10 text-lg leading-6  lg:leading-7 xl:text-xl  xl:leading-8 2xl:text-3xl">
-          <Textfit mode="multi">{subtitle}</Textfit>
-        </p>
+    <>
+      <div
+        ref={vantaRef}
+        className="hidden sm:grid mb-10 h-52 grid-cols-12 grid-rows-6 overflow-hidden rounded-2xl p-10  pt-0 "
+      >
+        <div className="col-span-full col-start-2 row-start-2">
+          <GradientText
+            margin="-mb-3"
+            gradient={textGradient}
+            size="text-7xl"
+            breakPoints="md:text-8xl xl:text-9xl"
+          >
+            <Textfit mode="single">{title}</Textfit>
+          </GradientText>
+          <div className="pl-10 text-lg leading-6  lg:leading-7 xl:text-xl  xl:leading-8 2xl:text-3xl">
+            <Textfit mode="multi">{subtitle}</Textfit>
+          </div>
+        </div>
       </div>
-    </div>
+      <div className=" block sm:hidden">
+        <GradientText
+          margin="my-5"
+          gradient={textGradient}
+          size="text-3xl"
+          breakPoints=""
+        >
+          {title}
+        </GradientText>
+      </div>
+    </>
   )
 }
 export default Banner

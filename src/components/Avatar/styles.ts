@@ -1,10 +1,17 @@
 import styled from 'styled-components'
 
+export const BackgroundMask = styled.div`
+  border-radius: 50%;
+  overflow: hidden;
+`
+
 interface iGradientBackground {
   gradient: string[]
 }
 
-const GradientBackground = styled.h3<iGradientBackground>`
+const GradientBackground = styled.div<iGradientBackground>`
+  border-radius: 50%;
+  padding: 4px;
   transition: all 0.3s ease-in-out;
   background: ${({ gradient }) =>
     `-webkit-linear-gradient( ${gradient.join(', ')})`};

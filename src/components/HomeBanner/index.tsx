@@ -106,7 +106,7 @@ const HomeBanner: React.FC<iHomeBanner> = ({
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          color: 0xffffff,
+          color: 0x4b5563,
           backgroundColor: 0x111827,
           showDots: true,
           points: 20.0,
@@ -116,32 +116,45 @@ const HomeBanner: React.FC<iHomeBanner> = ({
       )
     }
     return () => {
-      if (vantaEffect) (vantaEffect as any).destroy()
+      if (vantaEffect) () => (vantaEffect as any).destroy()
     }
   }, [vantaEffect])
 
   return (
     <section
       ref={vantaRef}
-      className="my-5 py-8 grid grid-cols-12 content-center items-center gap-10 rounded-2xl overflow-hidden"
+      className="px-8 lg:px-0 my-5 py-8 grid grid-cols-12 content-center items-center gap-10 rounded-2xl overflow-hidden"
     >
-      <Link href="/about" passHref>
-        <div className="col-span-7 col-start-3 md:col-end-6 md:col-span-3 cursor-pointer">
+      <Link href="/about">
+        <div className="cursor-pointer hidden md:block md:col-end-6 md:col-span-3">
           <Avatar gradient={colors[colorIndex]} />
         </div>
       </Link>
-      <Link href="/about" passHref>
+      <Link href="/about">
         <div className=" col-span-11 col-start-1 md:col-start-6 md:col-span-6 cursor-pointer">
-          <span className="text-2xl lg:text-3xl">{headTitle}</span>
-          <h1 className="font-bold tracking-wide ">
+          <span className="text-2xl md:text-3xl">
+            {headTitle}
+            <b className="block sm:hidden"> Bruno Genaro</b>
+          </span>
+          <h1 className="font-bold tracking-wide hidden sm:block">
             <Textfit mode="single">{title}</Textfit>
           </h1>
-          <Gradient
-            className="tracking-wide font-bold text-3xl"
-            colors={colors[colorIndex]}
-          >
-            <Textfit mode="multi"> {word}|</Textfit>
-          </Gradient>
+          <div className="hidden sm:block">
+            <Gradient
+              className="tracking-wide font-bold text-3xl"
+              colors={colors[colorIndex]}
+            >
+              <Textfit mode="multi"> {word}|</Textfit>
+            </Gradient>
+          </div>
+          <div className="block sm:hidden">
+            <Gradient
+              className="tracking-wide font-bold text-lg"
+              colors={colors[colorIndex]}
+            >
+              {word}|
+            </Gradient>
+          </div>
         </div>
       </Link>
     </section>
