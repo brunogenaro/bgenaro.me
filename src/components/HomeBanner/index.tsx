@@ -139,12 +139,22 @@ const HomeBanner: React.FC<iHomeBanner> = ({
           <h1 className="font-bold tracking-wide hidden sm:block">
             <Textfit mode="single">{title}</Textfit>
           </h1>
-          <Gradient
-            className="tracking-wide font-bold text-3xl"
-            colors={colors[colorIndex]}
-          >
-            <Textfit mode="multi"> {word}|</Textfit>
-          </Gradient>
+          <div className="hidden sm:block">
+            <Gradient
+              className="tracking-wide font-bold text-3xl"
+              colors={colors[colorIndex]}
+            >
+              <Textfit mode="multi"> {word}|</Textfit>
+            </Gradient>
+          </div>
+          <div className="block sm:hidden">
+            <Gradient
+              className="tracking-wide font-bold text-lg"
+              colors={colors[colorIndex]}
+            >
+              {word}|
+            </Gradient>
+          </div>
         </div>
       </Link>
     </section>
